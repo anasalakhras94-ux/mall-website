@@ -1,0 +1,1858 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Majdi Mall | سوق مجدي - Queen Rania Street, Amman</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Welcome to the redesigned luxury experience of Majdi Mall on Queen Rania Street, Amman. Explore high-end stores, exceptional dining including the famous Islamic Chinese Restaurant, family entertainment, hypermarket, and free valet-style parking.">
+    <meta name="keywords" content="Majdi Mall, سوق مجدي, Luxury Mall Amman, Queen Rania Street shopping, Amman Mall, Islamic Chinese Restaurant Amman, Jordan luxury malls">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Playfair Display for Luxury Headings, Inter for English Sans, Tajawal for Arabic Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: '#C5A880',      /* Luxury Soft Bronze / Gold */
+                            dark: '#A6885F',         /* Deep Warm Bronze */
+                            light: '#F5EFE6',        /* Cream Alabaster */
+                            cream: '#FDFBF7'         /* Pure Ivory base */
+                        },
+                        luxuryGray: {
+                            50: '#FDFDFD',
+                            100: '#F5F5F5',
+                            200: '#EAEAEA',
+                            800: '#1C1C1C',
+                            900: '#121212',
+                            950: '#0A0A0A'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'Tajawal', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom Style Sheet for luxury design and animations -->
+    <style>
+        /* Custom scrollbar matching modern high-end complexes */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FAFAFA;
+        }
+        .dark ::-webkit-scrollbar-track {
+            background: #121212;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #C5A880;
+            border-radius: 3px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #A6885F;
+        }
+
+        /* Bilingual visibility rules */
+        [lang="ar"] .lang-en { display: none !important; }
+        [lang="en"] .lang-ar { display: none !important; }
+
+        [lang="ar"] {
+            font-family: 'Tajawal', sans-serif;
+        }
+        [lang="en"] {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Subtle Luxury Glassmorphism Panel */
+        .luxury-glass {
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(197, 168, 128, 0.15);
+        }
+        .dark .luxury-glass {
+            background: rgba(18, 18, 18, 0.75);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(197, 168, 128, 0.1);
+        }
+
+        /* Premium Letter spacing and headings override */
+        .luxury-heading {
+            font-family: 'Playfair Display', 'Tajawal', serif;
+            letter-spacing: -0.02em;
+        }
+        [lang="ar"] .luxury-heading {
+            font-family: 'Tajawal', sans-serif;
+            font-weight: 700;
+            letter-spacing: normal;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-luxuryGray-900 dark:bg-luxuryGray-950 dark:text-luxuryGray-100 transition-colors duration-500 font-sans">
+
+<!-- Minimalist Luxury Navigation Header -->
+<header class="fixed top-0 left-0 w-full z-50 transition-all duration-300 border-b border-zinc-100 dark:border-zinc-900 bg-white/90 dark:bg-luxuryGray-950/90 backdrop-blur-md" id="main-header">
+    <nav class="max-w-7xl mx-auto py-4 px-6 sm:px-10 flex justify-between items-center">
+        <!-- Clickable Official Logo Element -->
+        <a href="#home" class="flex items-center group py-0.5" aria-label="Majdi Mall Home">
+            <img src="ChatGPT Image Jun 18, 2026, 12_39_56 AM_5.png" 
+                 alt="Majdi Mall Logo" 
+                 class="h-9 sm:h-11 w-auto object-contain transition-all duration-300 group-hover:scale-[1.03] group-hover:opacity-90 dark:brightness-100"
+                 onerror="this.src='https://placehold.co/180x60/ffffff/121212?text=Majdi+Mall'">
+        </a>
+
+        <!-- Desktop Navigation Items (Luxurious & Clean) -->
+        <ul class="hidden lg:flex items-center gap-8 text-[11px] uppercase tracking-[0.2em] font-medium text-luxuryGray-900/70 dark:text-luxuryGray-100/70">
+            <li><a href="#home" class="hover:text-primary transition-colors duration-300"><span class="lang-en">Home</span><span class="lang-ar">الرئيسية</span></a></li>
+            <li><a href="#stores" class="hover:text-primary transition-colors duration-300"><span class="lang-en">Stores</span><span class="lang-ar">المتاجر</span></a></li>
+            <li><a href="#dining" class="hover:text-primary transition-colors duration-300"><span class="lang-en">Dining</span><span class="lang-ar">المطاعم</span></a></li>
+            <li><a href="#entertainment" class="hover:text-primary transition-colors duration-300"><span class="lang-en">Entertainment</span><span class="lang-ar">الترفيه</span></a></li>
+            <li><a href="#events" class="hover:text-primary transition-colors duration-300"><span class="lang-en">Events</span><span class="lang-ar">الفعاليات</span></a></li>
+            <li><a href="#map" class="hover:text-primary transition-colors duration-300"><span class="lang-en">Mall Map</span><span class="lang-ar">خريطة المول</span></a></li>
+            <li><a href="#contact" class="hover:text-primary transition-colors duration-300"><span class="lang-en">Contact</span><span class="lang-ar">التواصل</span></a></li>
+        </ul>
+
+        <!-- Right Side Utility Controls (Search Icon, Theme Toggle, Language Toggle, Mobile Menu) -->
+        <div class="flex items-center gap-4">
+            <!-- Sleek Interactive Search Icon -->
+            <button onclick="toggleQuickSearch()" class="w-8 h-8 text-luxuryGray-900 dark:text-luxuryGray-100 flex items-center justify-center transition-all hover:text-primary" aria-label="Search">
+                <i class="fa-solid fa-magnifying-glass text-sm"></i>
+            </button>
+
+            <!-- Language Toggle Button -->
+            <button onclick="toggleLanguage()" class="text-[10px] tracking-widest font-semibold uppercase px-2.5 py-1.5 border border-zinc-200 dark:border-zinc-800 hover:border-primary/40 rounded transition-all duration-300">
+                <span class="lang-en">العربية</span>
+                <span class="lang-ar">English</span>
+            </button>
+
+            <!-- Minimal Theme Toggle -->
+            <button onclick="toggleTheme()" class="w-8 h-8 rounded-full text-luxuryGray-900 dark:text-luxuryGray-100 flex items-center justify-center transition hover:text-primary" aria-label="Toggle Theme">
+                <i class="fa-solid fa-moon dark:hidden text-sm"></i>
+                <i class="fa-solid fa-sun hidden dark:block text-sm"></i>
+            </button>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button onclick="toggleMobileMenu()" class="lg:hidden w-8 h-8 text-luxuryGray-900 dark:text-luxuryGray-100 flex items-center justify-center transition" aria-label="Open Menu">
+                <i class="fa-solid fa-bars-staggered text-sm" id="menu-icon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Drawer Menu Dropdown -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-white dark:bg-luxuryGray-950 border-t border-zinc-100 dark:border-zinc-900 py-6 px-6 flex flex-col gap-4 shadow-xl">
+        <a href="#home" onclick="toggleMobileMenu()" class="text-xs uppercase tracking-widest font-semibold py-1 border-b border-zinc-50 dark:border-zinc-900"><span class="lang-en">Home</span><span class="lang-ar">الرئيسية</span></a>
+        <a href="#stores" onclick="toggleMobileMenu()" class="text-xs uppercase tracking-widest font-semibold py-1 border-b border-zinc-50 dark:border-zinc-900"><span class="lang-en">Stores Directory</span><span class="lang-ar">دليل المحلات</span></a>
+        <a href="#dining" onclick="toggleMobileMenu()" class="text-xs uppercase tracking-widest font-semibold py-1 border-b border-zinc-50 dark:border-zinc-900"><span class="lang-en">Dining & Cafes</span><span class="lang-ar">المطاعم والمقاهي</span></a>
+        <a href="#entertainment" onclick="toggleMobileMenu()" class="text-xs uppercase tracking-widest font-semibold py-1 border-b border-zinc-50 dark:border-zinc-900"><span class="lang-en">Entertainment</span><span class="lang-ar">الترفيه العائلي</span></a>
+        <a href="#events" onclick="toggleMobileMenu()" class="text-xs uppercase tracking-widest font-semibold py-1 border-b border-zinc-50 dark:border-zinc-900"><span class="lang-en">Events Schedule</span><span class="lang-ar">جدول الفعاليات</span></a>
+        <a href="#map" onclick="toggleMobileMenu()" class="text-xs uppercase tracking-widest font-semibold py-1 border-b border-zinc-50 dark:border-zinc-900"><span class="lang-en">Interactive Mall Map</span><span class="lang-ar">خريطة الطوابق</span></a>
+        <a href="#contact" onclick="toggleMobileMenu()" class="text-xs uppercase tracking-widest font-semibold py-1"><span class="lang-en">Contact Us</span><span class="lang-ar">اتصل بنا</span></a>
+    </div>
+</header>
+
+<!-- Quick Search Dropdown Panel (Overlay) -->
+<div id="quick-search-overlay" class="fixed top-16 left-0 w-full z-40 hidden bg-white/95 dark:bg-luxuryGray-950/95 border-b border-zinc-100 dark:border-zinc-900 px-6 py-6 shadow-xl transition-all duration-300">
+    <div class="max-w-3xl mx-auto flex items-center gap-3">
+        <i class="fa-solid fa-magnifying-glass text-primary text-lg"></i>
+        <input type="text" id="quick-search-input" oninput="runStoreSearchUniversal()" placeholder="Search stores, brands, hypermarket, dining..." class="w-full bg-transparent text-luxuryGray-900 dark:text-white border-b border-zinc-200 dark:border-zinc-800 focus:border-primary focus:outline-none text-base py-2 font-light">
+        <button onclick="toggleQuickSearch()" class="text-xs uppercase tracking-widest font-bold text-zinc-400 hover:text-luxuryGray-900 dark:hover:text-white"><span class="lang-en">Close</span><span class="lang-ar">إغلاق</span></button>
+    </div>
+</div>
+
+<!-- Hero Section: Full-Width Cinematic Luxury Design -->
+<section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
+    <!-- Full-Width Minimal Luxury Cinematic Background -->
+    <div class="absolute inset-0 z-0 bg-luxuryGray-950 bg-[radial-gradient(circle_at_center,rgba(197,168,128,0.15)_0%,rgba(10,10,10,1)_80%)]">
+        <!-- Smooth subtle ambient glow circles for high-end lighting depth -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[500px] h-[500px] rounded-full bg-primary/5 blur-[120px] pointer-events-none"></div>
+        <div class="absolute bottom-10 left-10 w-[300px] h-[300px] rounded-full bg-primary/3 blur-[100px] pointer-events-none"></div>
+    </div>
+
+    <!-- Hero Content Panel -->
+    <div class="relative z-10 text-center px-6 max-w-5xl mx-auto flex flex-col items-center pt-24">
+        <!-- Prominent White Floating Luxury Card containing the uploaded logo (maintains brand colors & high visibility) -->
+        <a href="#home" class="block mb-10 max-w-[280px] sm:max-w-[340px] bg-white p-6 rounded-2xl border border-zinc-200/50 shadow-[0_20px_50px_rgba(0,0,0,0.5)] transform hover:scale-105 transition duration-500 select-none cursor-pointer">
+            <img src="ChatGPT Image Jun 18, 2026, 12_39_56 AM_5.png" 
+                 alt="Majdi Mall Logo" 
+                 class="w-full h-auto object-contain mx-auto"
+                 onerror="this.src='https://placehold.co/300x100/ffffff/121212?text=Majdi+Mall'">
+        </a>
+
+        <!-- Minimal subtle badge -->
+        <div class="mb-6 inline-flex items-center gap-2 px-4.5 py-1 border border-primary/30 rounded-full bg-primary/10 text-primary text-xs uppercase tracking-[0.25em] font-medium">
+            <span class="lang-en">Amman's Premier Architectural Hub</span>
+            <span class="lang-ar">أبرز صرح تجاري للتسوق في عمان</span>
+        </div>
+
+        <!-- Luxury Main Headlines -->
+        <h2 class="text-4xl sm:text-6xl md:text-7xl font-light text-white leading-tight mb-6 luxury-heading">
+            <span class="lang-en block">Experience <span class="font-normal italic text-primary">Luxury Shopping</span></span>
+            <span class="lang-ar block">تسوّق <span class="font-normal italic text-primary">بمنظور الفخامة</span></span>
+        </h2>
+
+        <!-- Subhead -->
+        <p class="text-sm sm:text-lg text-zinc-300 font-light mb-10 max-w-2xl leading-relaxed tracking-wider">
+            <span class="lang-en block">Discover world-class brands, exceptional dining, and unforgettable experiences in the heart of Amman.</span>
+            <span class="lang-ar block">اكتشف نخبة من العلامات العالمية، ومطاعم استثنائية، وتجارب ترفيهية لا تُنسى في قلب العاصمة عمان.</span>
+        </p>
+
+        <!-- Clean Luxury Buttons with minimal outlines and fills -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
+            <a href="#stores" class="w-full sm:w-auto min-w-[180px] bg-primary hover:bg-primary-dark text-luxuryGray-950 hover:text-white font-medium text-xs uppercase tracking-[0.2em] py-4 px-8 rounded transition-all duration-500 shadow-xl">
+                <span class="lang-en">Explore Stores</span><span class="lang-ar">استكشف المتاجر</span>
+            </a>
+            <a href="#events" class="w-full sm:w-auto min-w-[180px] bg-transparent hover:bg-white/10 text-white border border-white/20 hover:border-white font-medium text-xs uppercase tracking-[0.2em] py-4 px-8 rounded transition-all duration-500">
+                <span class="lang-en">View Events</span><span class="lang-ar">عرض الفعاليات</span>
+            </a>
+        </div>
+
+        <!-- Dynamic Counter Ribbon (Integrated elegantly below Hero text) -->
+        <div class="mt-20 w-full max-w-4xl grid grid-cols-2 md:grid-cols-4 gap-6 bg-white/[0.03] border border-white/10 p-6 rounded-lg backdrop-blur-md">
+            <div class="text-center">
+                <p class="text-3xl font-light text-primary tracking-widest" id="counter-stores">150+</p>
+                <p class="text-[9px] text-zinc-400 mt-1 uppercase tracking-[0.2em] font-medium">
+                    <span class="lang-en">Stores & Brands</span><span class="lang-ar">محل وعلامة تجارية</span>
+                </p>
+            </div>
+            <div class="text-center border-l border-white/10 rtl:border-l-0 rtl:border-r">
+                <p class="text-3xl font-light text-white tracking-widest">8,141</p>
+                <p class="text-[9px] text-zinc-400 mt-1 uppercase tracking-[0.2em] font-medium">
+                    <span class="lang-en">Google Reviews</span><span class="lang-ar">تقييمات غوغل</span>
+                </p>
+            </div>
+            <div class="text-center border-l border-white/10 rtl:border-l-0 rtl:border-r">
+                <p class="text-3xl font-light text-primary tracking-widest">100%</p>
+                <p class="text-[9px] text-zinc-400 mt-1 uppercase tracking-[0.2em] font-medium">
+                    <span class="lang-en">Free Parking</span><span class="lang-ar">مواقف مجانية بالكامل</span>
+                </p>
+            </div>
+            <div class="text-center border-l border-white/10 rtl:border-l-0 rtl:border-r">
+                <p class="text-3xl font-light text-white tracking-widest">3.7 / 5</p>
+                <p class="text-[9px] text-zinc-400 mt-1 uppercase tracking-[0.2em] font-medium">
+                    <span class="lang-en">Customer Rating</span><span class="lang-ar">تقييم رضا العملاء</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section: About the Mall & Pillars -->
+<section class="py-24 px-6 sm:px-10 max-w-7xl mx-auto">
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <!-- Left Side: Clean Visual Representation -->
+        <div class="relative rounded-lg overflow-hidden shadow-2xl border border-zinc-200 dark:border-zinc-800 bg-luxuryGray-100 dark:bg-luxuryGray-900 group">
+            <img src="https://images.unsplash.com/photo-1582037928867-677041733445?q=80&w=800&auto=format&fit=crop" 
+                 alt="Inside Mall Atmosphere" 
+                 class="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105"
+                 onerror="this.src='https://placehold.co/800x450/121212/C5A880?text=Mall+Interior'">
+            <div class="absolute inset-0 bg-gradient-to-t from-luxuryGray-950/60 via-transparent to-transparent"></div>
+            <div class="absolute bottom-6 left-6 right-6 flex justify-between items-center text-white">
+                <span class="text-xs uppercase tracking-widest font-semibold text-primary"><span class="lang-en">Est. 2012</span><span class="lang-ar">تأسس عام 2012</span></span>
+                <span class="text-[10px] uppercase tracking-widest opacity-80"><span class="lang-en">Queen Rania St.</span><span class="lang-ar">شارع الملكة رانيا</span></span>
+            </div>
+        </div>
+
+        <!-- Right Side: Clean Narrative Typography -->
+        <div class="space-y-8">
+            <div class="flex items-center gap-3">
+                <span class="w-12 h-[1px] bg-primary"></span>
+                <span class="text-xs font-bold uppercase tracking-[0.25em] text-primary"><span class="lang-en">Discover Majdi Mall</span><span class="lang-ar">اكتشف سوق مجدي</span></span>
+            </div>
+
+            <h3 class="text-3xl sm:text-4xl font-light text-luxuryGray-900 dark:text-white leading-tight luxury-heading">
+                <span class="lang-en">The Ultimate Shopping & Family Center of Amman</span>
+                <span class="lang-ar">المركز التجاري والترفيهي المتكامل للعائلة في عمّان</span>
+            </h3>
+
+            <p class="text-zinc-500 dark:text-zinc-400 leading-relaxed font-light text-sm sm:text-base">
+                <span class="lang-en">Majdi Mall stands as one of Amman's most active and recognized commercial landmarks. Located conveniently on Queen Rania Street, the mall serves as an essential neighborhood and regional hub. By blending modern hypermarkets, value fashion stores, top-tier consumer electronics, home essentials, and vibrant dining plazas with safe, lively kids entertainment spaces, Majdi Mall delivers an accessible, complete commercial package tailored specifically to Jordanian and regional families.</span>
+                <span class="lang-ar">يقف سوق مجدي كأحد أبرز المعالم التجارية الحيوية والشهيرة في العاصمة عمّان. بموقعه الاستراتيجي المميز في شارع الملكة رانيا، يخدم المول الآلاف من المتسوقين يومياً. من خلال الجمع بين الهايبرماركت الضخم، محلات الأزياء الراقية، أحدث الأجهزة الإلكترونية الذكية، ومستلزمات المنزل مع مساحات ألعاب آمنة ومطاعم شهيرة، يوفر المول تجربة متكاملة تناسب احتياجات وتطلعات العائلة الأردنية.</span>
+            </p>
+
+            <!-- Minimal Category Badges Grid -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-4">
+                <div class="p-4 border border-zinc-100 dark:border-zinc-900 bg-zinc-50/50 dark:bg-zinc-900/50 rounded flex flex-col justify-between h-28 hover:border-primary/40 transition">
+                    <i class="fa-solid fa-shirt text-primary text-base"></i>
+                    <h4 class="font-medium text-xs tracking-widest uppercase text-luxuryGray-900 dark:text-white"><span class="lang-en">Fashion</span><span class="lang-ar">أزياء وملابس</span></h4>
+                </div>
+                <div class="p-4 border border-zinc-100 dark:border-zinc-900 bg-zinc-50/50 dark:bg-zinc-900/50 rounded flex flex-col justify-between h-28 hover:border-primary/40 transition">
+                    <i class="fa-solid fa-basket-shopping text-primary text-base"></i>
+                    <h4 class="font-medium text-xs tracking-widest uppercase text-luxuryGray-900 dark:text-white"><span class="lang-en">Hypermarket</span><span class="lang-ar">هايبر ماركت</span></h4>
+                </div>
+                <div class="p-4 border border-zinc-100 dark:border-zinc-900 bg-zinc-50/50 dark:bg-zinc-900/50 rounded flex flex-col justify-between h-28 hover:border-primary/40 transition">
+                    <i class="fa-solid fa-gamepad text-primary text-base"></i>
+                    <h4 class="font-medium text-xs tracking-widest uppercase text-luxuryGray-900 dark:text-white"><span class="lang-en">Kids Play Area</span><span class="lang-ar">ترفيه أطفال</span></h4>
+                </div>
+                <div class="p-4 border border-zinc-100 dark:border-zinc-900 bg-zinc-50/50 dark:bg-zinc-900/50 rounded flex flex-col justify-between h-28 hover:border-primary/40 transition">
+                    <i class="fa-solid fa-utensils text-primary text-base"></i>
+                    <h4 class="font-medium text-xs tracking-widest uppercase text-luxuryGray-900 dark:text-white"><span class="lang-en">Restaurants</span><span class="lang-ar">المطاعم</span></h4>
+                </div>
+                <div class="p-4 border border-zinc-100 dark:border-zinc-900 bg-zinc-50/50 dark:bg-zinc-900/50 rounded flex flex-col justify-between h-28 hover:border-primary/40 transition">
+                    <i class="fa-solid fa-mobile-screen text-primary text-base"></i>
+                    <h4 class="font-medium text-xs tracking-widest uppercase text-luxuryGray-900 dark:text-white"><span class="lang-en">Electronics</span><span class="lang-ar">الكترونيات</span></h4>
+                </div>
+                <div class="p-4 border border-zinc-100 dark:border-zinc-900 bg-zinc-50/50 dark:bg-zinc-900/50 rounded flex flex-col justify-between h-28 hover:border-primary/40 transition">
+                    <i class="fa-solid fa-square-parking text-primary text-base"></i>
+                    <h4 class="font-medium text-xs tracking-widest uppercase text-luxuryGray-900 dark:text-white"><span class="lang-en">Free Parking</span><span class="lang-ar">مواقف مجانية</span></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section: Luxury Store Directory -->
+<section id="stores" class="py-24 bg-zinc-50 dark:bg-luxuryGray-900 border-y border-zinc-100 dark:border-zinc-950">
+    <div class="max-w-7xl mx-auto px-6 sm:px-10">
+        
+        <!-- Header -->
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <span class="text-xs font-bold text-primary uppercase tracking-[0.25em] block mb-3"><span class="lang-en">Store Directory</span><span class="lang-ar">دليل المحلات والمتاجر</span></span>
+            <h3 class="text-3xl sm:text-4xl font-light text-luxuryGray-900 dark:text-white mb-4 luxury-heading"><span class="lang-en">Curated Brands Directory</span><span class="lang-ar">تسوّق ما تحبه في متاجرك المفضلة</span></h3>
+            <div class="w-12 h-[1px] bg-primary mx-auto mb-6"></div>
+            <p class="text-zinc-500 text-xs sm:text-sm tracking-wider font-light"><span class="lang-en">Browse through over 150 fashion outlets, supermarkets, technology hubs, and specialty services.</span><span class="lang-ar">استعرض أكثر من 150 علامة تجارية تلبي كافة احتياجاتك المنزلية والعائلية بأسعار منافسة.</span></p>
+        </div>
+
+        <!-- Directory Search & Dynamic Filters -->
+        <div class="bg-white dark:bg-luxuryGray-950 border border-zinc-100 dark:border-zinc-900 p-6 rounded shadow-sm mb-12 space-y-6">
+            <div class="flex flex-col lg:flex-row gap-6 items-center justify-between">
+                <!-- Search Box inside Directory -->
+                <div class="relative w-full lg:max-w-md">
+                    <i class="fa-solid fa-magnifying-glass absolute left-4 top-3.5 text-zinc-400 text-sm"></i>
+                    <input type="text" id="store-search-box" oninput="runStoreSearch()" 
+                           placeholder="Search stores, brands, hypermarket..." 
+                           class="w-full pl-11 pr-4 py-3 rounded border border-zinc-100 dark:border-zinc-900 bg-zinc-50 dark:bg-luxuryGray-900 focus:border-primary focus:outline-none text-xs tracking-wider text-luxuryGray-900 dark:text-white font-light">
+                </div>
+
+                <!-- Fast A-Z Filter Ribbon -->
+                <div class="w-full overflow-x-auto flex items-center gap-1.5 py-1 scrollbar-thin">
+                    <button onclick="filterByLetter('all')" class="az-btn active shrink-0 px-3 py-1.5 rounded bg-primary text-luxuryGray-950 text-[10px] font-bold uppercase tracking-widest transition duration-300"><span class="lang-en">All A-Z</span><span class="lang-ar">الكل</span></button>
+                    <!-- Generation of Letters -->
+                    <script>
+                        const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
+                        letters.forEach(letter => {
+                            document.write(`<button onclick="filterByLetter('${letter}')" class="az-btn shrink-0 w-8 h-8 rounded bg-zinc-50 dark:bg-luxuryGray-900 text-luxuryGray-900 dark:text-zinc-400 hover:bg-primary hover:text-luxuryGray-950 text-xs font-semibold transition duration-300">${letter}</button>`);
+                        });
+                    </script>
+                </div>
+            </div>
+
+            <!-- Categories Line Filter List (Luxury Underlined Text Tabs) -->
+            <div class="flex flex-wrap items-center gap-4 pt-4 border-t border-zinc-100 dark:border-zinc-900">
+                <span class="text-[10px] font-bold text-zinc-400 uppercase tracking-widest"><span class="lang-en">Categories:</span><span class="lang-ar">الأقسام:</span></span>
+                <div class="flex flex-wrap gap-2">
+                    <button onclick="filterCategory('all')" class="cat-tab active px-3.5 py-2 text-[10px] font-semibold uppercase tracking-widest border border-primary bg-primary/10 text-primary transition rounded"><span class="lang-en">All Categories</span><span class="lang-ar">كافة الأقسام</span></button>
+                    <button onclick="filterCategory('fashion')" class="cat-tab px-3.5 py-2 text-[10px] font-semibold uppercase tracking-widest border border-zinc-100 dark:border-zinc-900 text-zinc-500 hover:text-primary transition rounded"><span class="lang-en">Fashion</span><span class="lang-ar">الأزياء</span></button>
+                    <button onclick="filterCategory('hypermarket')" class="cat-tab px-3.5 py-2 text-[10px] font-semibold uppercase tracking-widest border border-zinc-100 dark:border-zinc-900 text-zinc-500 hover:text-primary transition rounded"><span class="lang-en">Hypermarket</span><span class="lang-ar">هايبر ماركت</span></button>
+                    <button onclick="filterCategory('electronics')" class="cat-tab px-3.5 py-2 text-[10px] font-semibold uppercase tracking-widest border border-zinc-100 dark:border-zinc-900 text-zinc-500 hover:text-primary transition rounded"><span class="lang-en">Electronics</span><span class="lang-ar">الإلكترونيات</span></button>
+                    <button onclick="filterCategory('home')" class="cat-tab px-3.5 py-2 text-[10px] font-semibold uppercase tracking-widest border border-zinc-100 dark:border-zinc-900 text-zinc-500 hover:text-primary transition rounded"><span class="lang-en">Home & Living</span><span class="lang-ar">المنزل والمعيشة</span></button>
+                    <button onclick="filterCategory('gifts')" class="cat-tab px-3.5 py-2 text-[10px] font-semibold uppercase tracking-widest border border-zinc-100 dark:border-zinc-900 text-zinc-500 hover:text-primary transition rounded"><span class="lang-en">Gifts & Crafts</span><span class="lang-ar">الهدايا والحرف</span></button>
+                    <button onclick="filterCategory('kids')" class="cat-tab px-3.5 py-2 text-[10px] font-semibold uppercase tracking-widest border border-zinc-100 dark:border-zinc-900 text-zinc-500 hover:text-primary transition rounded"><span class="lang-en">Kids Area</span><span class="lang-ar">ألعاب الأطفال</span></button>
+                    <button onclick="filterCategory('health')" class="cat-tab px-3.5 py-2 text-[10px] font-semibold uppercase tracking-widest border border-zinc-100 dark:border-zinc-900 text-zinc-500 hover:text-primary transition rounded"><span class="lang-en">Health & Beauty</span><span class="lang-ar">الصحة والجمال</span></button>
+                </div>
+            </div>
+
+            <!-- Floor Line Filter List -->
+            <div class="flex flex-wrap items-center gap-4 pt-4 border-t border-zinc-50 dark:border-zinc-900">
+                <span class="text-[10px] font-bold text-zinc-400 uppercase tracking-widest"><span class="lang-en">Floors:</span><span class="lang-ar">الطوابق:</span></span>
+                <div class="flex flex-wrap gap-2">
+                    <button onclick="filterFloor('all')" class="floor-tab active px-3.5 py-2 text-[10px] font-semibold uppercase tracking-widest border border-primary bg-primary/10 text-primary transition rounded"><span class="lang-en">All Floors</span><span class="lang-ar">كل الطوابق</span></button>
+                    <button onclick="filterFloor('ground')" class="floor-tab px-3.5 py-2 text-[10px] font-semibold uppercase tracking-widest border border-zinc-100 dark:border-zinc-900 text-zinc-500 hover:text-primary transition rounded"><span class="lang-en">Ground Floor</span><span class="lang-ar">الطابق الأرضي</span></button>
+                    <button onclick="filterFloor('first')" class="floor-tab px-3.5 py-2 text-[10px] font-semibold uppercase tracking-widest border border-zinc-100 dark:border-zinc-900 text-zinc-500 hover:text-primary transition rounded"><span class="lang-en">First Floor</span><span class="lang-ar">الطابق الأول</span></button>
+                    <button onclick="filterFloor('second')" class="floor-tab px-3.5 py-2 text-[10px] font-semibold uppercase tracking-widest border border-zinc-100 dark:border-zinc-900 text-zinc-500 hover:text-primary transition rounded"><span class="lang-en">Second Floor</span><span class="lang-ar">الطابق الثاني</span></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Curated Directory Cards Grid -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8" id="directory-grid">
+            
+            <!-- Store Item 1 -->
+            <div class="store-item bg-white dark:bg-luxuryGray-950 border border-zinc-100 dark:border-zinc-900 rounded overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 flex flex-col justify-between group" 
+                 data-category="fashion" data-floor="first" data-name="Al-Haram Premium Fashion ملبوسات الحرم الفاخرة">
+                <div class="p-6 flex gap-5 items-start">
+                    <div class="w-14 h-14 rounded-full border border-primary/20 text-primary flex items-center justify-center font-serif font-semibold text-xl shrink-0 group-hover:border-primary transition duration-500">H</div>
+                    <div>
+                        <span class="text-[9px] uppercase tracking-widest font-semibold text-primary"><span class="lang-en">Fashion</span><span class="lang-ar">أزياء وملابس</span></span>
+                        <h4 class="font-semibold text-base text-luxuryGray-900 dark:text-white mt-1.5 leading-snug">
+                            <span class="lang-en">Al-Haram Plaza Outlet</span><span class="lang-ar">ملبوسات الحرم بلازا</span>
+                        </h4>
+                        <p class="text-[10px] text-zinc-400 mt-1"><i class="fa-solid fa-map-pin text-primary/70 mr-1.5 rtl:mr-0 rtl:ml-1.5"></i> <span class="lang-en">First Floor - Unit 102</span><span class="lang-ar">الطابق الأول - جناح 102</span></p>
+                    </div>
+                </div>
+                <div class="px-6 pb-5 pt-3 border-t border-zinc-50 dark:border-zinc-900 flex items-center justify-between text-xs text-zinc-400">
+                    <span><i class="fa-solid fa-clock text-primary mr-1.5 rtl:mr-0 rtl:ml-1.5"></i> 10:00 AM - 11:00 PM</span>
+                    <a href="tel:065338570" class="text-primary hover:text-primary-dark font-semibold tracking-widest uppercase text-[10px] flex items-center gap-1.5"><i class="fa-solid fa-phone"></i> <span class="lang-en">Call Desk</span><span class="lang-ar">اتصال</span></a>
+                </div>
+            </div>
+
+            <!-- Store Item 2 -->
+            <div class="store-item bg-white dark:bg-luxuryGray-950 border border-zinc-100 dark:border-zinc-900 rounded overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 flex flex-col justify-between group" 
+                 data-category="hypermarket" data-floor="ground" data-name="Majdi Anchor Hypermarket سوبرماركت مجدي الرئيسي">
+                <div class="p-6 flex gap-5 items-start">
+                    <div class="w-14 h-14 rounded-full border border-primary/20 text-primary flex items-center justify-center font-serif font-semibold text-xl shrink-0 group-hover:border-primary transition duration-500">M</div>
+                    <div>
+                        <span class="text-[9px] uppercase tracking-widest font-semibold text-primary"><span class="lang-en">Hypermarket</span><span class="lang-ar">هايبر ماركت</span></span>
+                        <h4 class="font-semibold text-base text-luxuryGray-900 dark:text-white mt-1.5 leading-snug">
+                            <span class="lang-en">Majdi Anchor Supermarket</span><span class="lang-ar">سوبر ماركت مجدي الرئيسي</span>
+                        </h4>
+                        <p class="text-[10px] text-zinc-400 mt-1"><i class="fa-solid fa-map-pin text-primary/70 mr-1.5 rtl:mr-0 rtl:ml-1.5"></i> <span class="lang-en">Ground Floor - Anchor Wing</span><span class="lang-ar">الطابق الأرضي - الجناح الرئيسي</span></p>
+                    </div>
+                </div>
+                <div class="px-6 pb-5 pt-3 border-t border-zinc-50 dark:border-zinc-900 flex items-center justify-between text-xs text-zinc-400">
+                    <span><i class="fa-solid fa-clock text-primary mr-1.5 rtl:mr-0 rtl:ml-1.5"></i> 08:00 AM - 12:00 AM</span>
+                    <a href="tel:065338570" class="text-primary hover:text-primary-dark font-semibold tracking-widest uppercase text-[10px] flex items-center gap-1.5"><i class="fa-solid fa-phone"></i> <span class="lang-en">Call Desk</span><span class="lang-ar">اتصال</span></a>
+                </div>
+            </div>
+
+            <!-- Store Item 3 -->
+            <div class="store-item bg-white dark:bg-luxuryGray-950 border border-zinc-100 dark:border-zinc-900 rounded overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 flex flex-col justify-between group" 
+                 data-category="electronics" data-floor="second" data-name="Smart Electronics الإلكترونيات الذكية">
+                <div class="p-6 flex gap-5 items-start">
+                    <div class="w-14 h-14 rounded-full border border-primary/20 text-primary flex items-center justify-center font-serif font-semibold text-xl shrink-0 group-hover:border-primary transition duration-500">S</div>
+                    <div>
+                        <span class="text-[9px] uppercase tracking-widest font-semibold text-primary"><span class="lang-en">Electronics</span><span class="lang-ar">الكترونيات</span></span>
+                        <h4 class="font-semibold text-base text-luxuryGray-900 dark:text-white mt-1.5 leading-snug">
+                            <span class="lang-en">Smart Tech Electronics</span><span class="lang-ar">سمارت تك للإلكترونيات</span>
+                        </h4>
+                        <p class="text-[10px] text-zinc-400 mt-1"><i class="fa-solid fa-map-pin text-primary/70 mr-1.5 rtl:mr-0 rtl:ml-1.5"></i> <span class="lang-en">Second Floor - Unit 204</span><span class="lang-ar">الطابق الثاني - جناح 204</span></p>
+                    </div>
+                </div>
+                <div class="px-6 pb-5 pt-3 border-t border-zinc-50 dark:border-zinc-900 flex items-center justify-between text-xs text-zinc-400">
+                    <span><i class="fa-solid fa-clock text-primary mr-1.5 rtl:mr-0 rtl:ml-1.5"></i> 10:00 AM - 11:00 PM</span>
+                    <a href="tel:065338570" class="text-primary hover:text-primary-dark font-semibold tracking-widest uppercase text-[10px] flex items-center gap-1.5"><i class="fa-solid fa-phone"></i> <span class="lang-en">Call Desk</span><span class="lang-ar">اتصال</span></a>
+                </div>
+            </div>
+
+            <!-- Store Item 4 -->
+            <div class="store-item bg-white dark:bg-luxuryGray-950 border border-zinc-100 dark:border-zinc-900 rounded overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 flex flex-col justify-between group" 
+                 data-category="gifts" data-floor="ground" data-name="Jordanian Heritage Mosaics مطرزات وفسيفساء التراث الأردني">
+                <div class="p-6 flex gap-5 items-start">
+                    <div class="w-14 h-14 rounded-full border border-primary/20 text-primary flex items-center justify-center font-serif font-semibold text-xl shrink-0 group-hover:border-primary transition duration-500">J</div>
+                    <div>
+                        <span class="text-[9px] uppercase tracking-widest font-semibold text-primary"><span class="lang-en">Gifts & Crafts</span><span class="lang-ar">هدايا وحرف</span></span>
+                        <h4 class="font-semibold text-base text-luxuryGray-900 dark:text-white mt-1.5 leading-snug">
+                            <span class="lang-en">Jordanian Mosaic & Crafts</span><span class="lang-ar">فسيفساء ومطرزات التراث الأردني</span>
+                        </h4>
+                        <p class="text-[10px] text-zinc-400 mt-1"><i class="fa-solid fa-map-pin text-primary/70 mr-1.5 rtl:mr-0 rtl:ml-1.5"></i> <span class="lang-en">Ground Floor - Heritage Wing</span><span class="lang-ar">الطابق الأرضي - جناح التراث</span></p>
+                    </div>
+                </div>
+                <div class="px-6 pb-5 pt-3 border-t border-zinc-50 dark:border-zinc-900 flex items-center justify-between text-xs text-zinc-400">
+                    <span><i class="fa-solid fa-clock text-primary mr-1.5 rtl:mr-0 rtl:ml-1.5"></i> 10:00 AM - 11:00 PM</span>
+                    <a href="tel:065338570" class="text-primary hover:text-primary-dark font-semibold tracking-widest uppercase text-[10px] flex items-center gap-1.5"><i class="fa-solid fa-phone"></i> <span class="lang-en">Call Desk</span><span class="lang-ar">اتصال</span></a>
+                </div>
+            </div>
+
+            <!-- Store Item 5 -->
+            <div class="store-item bg-white dark:bg-luxuryGray-950 border border-zinc-100 dark:border-zinc-900 rounded overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 flex flex-col justify-between group" 
+                 data-category="kids" data-floor="second" data-name="Kids Castle Play Zone قلعة ألعاب ومرح الأطفال">
+                <div class="p-6 flex gap-5 items-start">
+                    <div class="w-14 h-14 rounded-full border border-primary/20 text-primary flex items-center justify-center font-serif font-semibold text-xl shrink-0 group-hover:border-primary transition duration-500">K</div>
+                    <div>
+                        <span class="text-[9px] uppercase tracking-widest font-semibold text-primary"><span class="lang-en">Kids Area</span><span class="lang-ar">منطقة الأطفال</span></span>
+                        <h4 class="font-semibold text-base text-luxuryGray-900 dark:text-white mt-1.5 leading-snug">
+                            <span class="lang-en">Kids Play Zone Castle</span><span class="lang-ar">مدينة ألعاب قلعة الأطفال</span>
+                        </h4>
+                        <p class="text-[10px] text-zinc-400 mt-1"><i class="fa-solid fa-map-pin text-primary/70 mr-1.5 rtl:mr-0 rtl:ml-1.5"></i> <span class="lang-en">Second Floor - Family Wing</span><span class="lang-ar">الطابق الثاني - الجناح العائلي</span></p>
+                    </div>
+                </div>
+                <div class="px-6 pb-5 pt-3 border-t border-zinc-50 dark:border-zinc-900 flex items-center justify-between text-xs text-zinc-400">
+                    <span><i class="fa-solid fa-clock text-primary mr-1.5 rtl:mr-0 rtl:ml-1.5"></i> 11:00 AM - 11:00 PM</span>
+                    <a href="tel:065338570" class="text-primary hover:text-primary-dark font-semibold tracking-widest uppercase text-[10px] flex items-center gap-1.5"><i class="fa-solid fa-phone"></i> <span class="lang-en">Call Desk</span><span class="lang-ar">اتصال</span></a>
+                </div>
+            </div>
+
+            <!-- Store Item 6 -->
+            <div class="store-item bg-white dark:bg-luxuryGray-950 border border-zinc-100 dark:border-zinc-900 rounded overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 flex flex-col justify-between group" 
+                 data-category="home" data-floor="first" data-name="Home Sweet Home Essentials هوم سويت لمستلزمات المنزل">
+                <div class="p-6 flex gap-5 items-start">
+                    <div class="w-14 h-14 rounded-full border border-primary/20 text-primary flex items-center justify-center font-serif font-semibold text-xl shrink-0 group-hover:border-primary transition duration-500">H</div>
+                    <div>
+                        <span class="text-[9px] uppercase tracking-widest font-semibold text-primary"><span class="lang-en">Home & Living</span><span class="lang-ar">مستلزمات منزلية</span></span>
+                        <h4 class="font-semibold text-base text-luxuryGray-900 dark:text-white mt-1.5 leading-snug">
+                            <span class="lang-en">Home Essentials Depot</span><span class="lang-ar">ديبو لمستلزمات ومفروشات المنزل</span>
+                        </h4>
+                        <p class="text-[10px] text-zinc-400 mt-1"><i class="fa-solid fa-map-pin text-primary/70 mr-1.5 rtl:mr-0 rtl:ml-1.5"></i> <span class="lang-en">First Floor - East Court</span><span class="lang-ar">الطابق الأول - الساحة الشرقية</span></p>
+                    </div>
+                </div>
+                <div class="px-6 pb-5 pt-3 border-t border-zinc-50 dark:border-zinc-900 flex items-center justify-between text-xs text-zinc-400">
+                    <span><i class="fa-solid fa-clock text-primary mr-1.5 rtl:mr-0 rtl:ml-1.5"></i> 10:00 AM - 11:00 PM</span>
+                    <a href="tel:065338570" class="text-primary hover:text-primary-dark font-semibold tracking-widest uppercase text-[10px] flex items-center gap-1.5"><i class="fa-solid fa-phone"></i> <span class="lang-en">Call Desk</span><span class="lang-ar">اتصال</span></a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- No Store Found Notice -->
+        <div id="no-store-notice" class="hidden text-center py-20 bg-white dark:bg-luxuryGray-950 rounded border border-zinc-100 dark:border-zinc-900 p-8">
+            <i class="fa-solid fa-store-slash text-3xl text-primary/60 mb-4"></i>
+            <h4 class="font-semibold text-base uppercase tracking-widest text-luxuryGray-900 dark:text-white"><span class="lang-en">No stores match filters</span><span class="lang-ar">لم نجد محلات تطابق البحث</span></h4>
+            <p class="text-zinc-500 text-xs mt-2"><span class="lang-en">Try refining your keyword query or choosing another general category filter.</span><span class="lang-ar">يرجى تغيير نص البحث أو اختيار قسم آخر.</span></p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Section: Luxury Interactive Mall Floor Map -->
+<section id="map" class="py-24 bg-white dark:bg-luxuryGray-950 border-b border-zinc-100 dark:border-zinc-900">
+    <div class="max-w-7xl mx-auto px-6 sm:px-10">
+        
+        <!-- Header -->
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <span class="text-xs font-bold text-primary uppercase tracking-[0.25em] block mb-3"><span class="lang-en">Navigation Guide</span><span class="lang-ar">دليل تخطيط المول</span></span>
+            <h3 class="text-3xl sm:text-4xl font-light text-luxuryGray-900 dark:text-white mb-4 luxury-heading"><span class="lang-en">Interactive Floor Layout Map</span><span class="lang-ar">مخطط طوابق المول التفاعلي</span></h3>
+            <div class="w-12 h-[1px] bg-primary mx-auto mb-6"></div>
+            <p class="text-zinc-500 text-xs sm:text-sm tracking-wider font-light"><span class="lang-en">Navigate quickly between floors and look up zoning plans instantly.</span><span class="lang-ar">تصفح أقسام ومواقع المحلات والمطاعم والخدمات الموزعة على طوابق المول الثلاثة.</span></p>
+        </div>
+
+        <!-- Interactive Map Wrapper with custom tabs -->
+        <div class="grid lg:grid-cols-12 gap-12 items-center">
+            <!-- Left Controls Column -->
+            <div class="lg:col-span-4 flex flex-col gap-3">
+                <button onclick="switchFloorLayout('ground')" id="floor-btn-ground" class="floor-layout-btn active text-left rtl:text-right p-5 rounded border border-primary bg-primary/5 text-primary flex items-center gap-4 transition duration-500">
+                    <i class="fa-solid fa-layer-group text-lg"></i>
+                    <div>
+                        <p class="text-xs uppercase tracking-widest font-semibold"><span class="lang-en">Ground Floor</span><span class="lang-ar">الطابق الأرضي</span></p>
+                        <p class="text-[10px] text-zinc-500 dark:text-zinc-400 mt-1"><span class="lang-en">Hypermarket, Heritage, Jewelry</span><span class="lang-ar">الهايبرماركت، الصرافة، التراث</span></p>
+                    </div>
+                </button>
+                <button onclick="switchFloorLayout('first')" id="floor-btn-first" class="floor-layout-btn text-left rtl:text-right p-5 rounded border border-zinc-100 dark:border-zinc-900 bg-zinc-50 dark:bg-luxuryGray-900 text-luxuryGray-900 dark:text-zinc-200 hover:border-primary/40 flex items-center gap-4 transition duration-500">
+                    <i class="fa-solid fa-shirt text-lg text-primary"></i>
+                    <div>
+                        <p class="text-xs uppercase tracking-widest font-semibold"><span class="lang-en">First Floor</span><span class="lang-ar">الطابق الأول</span></p>
+                        <p class="text-[10px] text-zinc-500 dark:text-zinc-400 mt-1"><span class="lang-en">Fashion, Home Decor, Salon</span><span class="lang-ar">الملابس، مستلزمات المنزل، الصالونات</span></p>
+                    </div>
+                </button>
+                <button onclick="switchFloorLayout('second')" id="floor-btn-second" class="floor-layout-btn text-left rtl:text-right p-5 rounded border border-zinc-100 dark:border-zinc-900 bg-zinc-50 dark:bg-luxuryGray-900 text-luxuryGray-900 dark:text-zinc-200 hover:border-primary/40 flex items-center gap-4 transition duration-500">
+                    <i class="fa-solid fa-utensils text-lg text-primary"></i>
+                    <div>
+                        <p class="text-xs uppercase tracking-widest font-semibold"><span class="lang-en">Second Floor / Food Court</span><span class="lang-ar">الطابق الثاني / المطاعم</span></p>
+                        <p class="text-[10px] text-zinc-500 dark:text-zinc-400 mt-1"><span class="lang-en">Dining, Kids Area, Electronics</span><span class="lang-ar">منطقة المطاعم، صالة الألعاب</span></p>
+                    </div>
+                </button>
+                <button onclick="switchFloorLayout('parking')" id="floor-btn-parking" class="floor-layout-btn text-left rtl:text-right p-5 rounded border border-zinc-100 dark:border-zinc-900 bg-zinc-50 dark:bg-luxuryGray-900 text-luxuryGray-900 dark:text-zinc-200 hover:border-primary/40 flex items-center gap-4 transition duration-500">
+                    <i class="fa-solid fa-square-parking text-lg text-primary"></i>
+                    <div>
+                        <p class="text-xs uppercase tracking-widest font-semibold"><span class="lang-en">Parking & Services</span><span class="lang-ar">مواقف السيارات والخدمات</span></p>
+                        <p class="text-[10px] text-zinc-500 dark:text-zinc-400 mt-1"><span class="lang-en">Underground, Car Wash, ATMs</span><span class="lang-ar">مواقف سفلية، غسيل السيارات</span></p>
+                    </div>
+                </button>
+            </div>
+
+            <!-- Right Visual Layout Details Display -->
+            <div class="lg:col-span-8 bg-zinc-50 dark:bg-luxuryGray-900 p-8 rounded border border-zinc-100 dark:border-zinc-900 min-h-[380px] flex flex-col justify-between shadow-sm">
+                <div id="floor-map-content" class="space-y-6">
+                    <!-- Loaded dynamically via JS -->
+                    <div class="flex items-center justify-between border-b border-zinc-200 dark:border-zinc-800 pb-4">
+                        <h4 class="font-semibold text-lg text-primary flex items-center gap-2">
+                            <i class="fa-solid fa-layer-group"></i>
+                            <span class="lang-en">Ground Floor Guide</span><span class="lang-ar">دليل الطابق الأرضي</span>
+                        </h4>
+                        <span class="text-[10px] tracking-widest bg-emerald-500/10 text-emerald-500 font-bold px-3 py-1 rounded uppercase"><span class="lang-en">Fully Accessible</span><span class="lang-ar">مجهز بالكامل للكراسي</span></span>
+                    </div>
+                    <p class="text-sm text-zinc-500 font-light leading-relaxed"><span class="lang-en">This floor accommodates main commercial services, easy direct parking drop-offs, banking kiosks, and the main hypermarket entrance.</span><span class="lang-ar">يحتوي الطابق الأرضي على الخدمات الرئيسية، ماكينات الصراف الآلي، والمدخل والمخرج المؤدي مباشرة إلى مواقف السيارات والهايبرماركت.</span></p>
+                    
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-4">
+                        <div class="p-4 bg-white dark:bg-luxuryGray-950 border border-zinc-100 dark:border-zinc-900 rounded text-center font-bold text-xs shadow-sm text-luxuryGray-900 dark:text-zinc-300 hover:border-primary/40 transition duration-300">
+                            <p class="text-primary text-[10px] uppercase tracking-widest font-semibold">GF-01</p>
+                            <p class="mt-1 font-medium text-xs"><span class="lang-en">Main Hypermarket</span><span class="lang-ar">الهايبرماركت</span></p>
+                        </div>
+                        <div class="p-4 bg-white dark:bg-luxuryGray-950 border border-zinc-100 dark:border-zinc-900 rounded text-center font-bold text-xs shadow-sm text-luxuryGray-900 dark:text-zinc-300 hover:border-primary/40 transition duration-300">
+                            <p class="text-primary text-[10px] uppercase tracking-widest font-semibold">GF-02</p>
+                            <p class="mt-1 font-medium text-xs"><span class="lang-en">Exchange & Banks</span><span class="lang-ar">الصرافة والبنوك</span></p>
+                        </div>
+                        <div class="p-4 bg-white dark:bg-luxuryGray-950 border border-zinc-100 dark:border-zinc-900 rounded text-center font-bold text-xs shadow-sm text-luxuryGray-900 dark:text-zinc-300 hover:border-primary/40 transition duration-300">
+                            <p class="text-primary text-[10px] uppercase tracking-widest font-semibold">GF-03</p>
+                            <p class="mt-1 font-medium text-xs"><span class="lang-en">Jordanian Crafts</span><span class="lang-ar">الحرف اليدوية</span></p>
+                        </div>
+                        <div class="p-4 bg-white dark:bg-luxuryGray-950 border border-zinc-100 dark:border-zinc-900 rounded text-center font-bold text-xs shadow-sm text-luxuryGray-900 dark:text-zinc-300 hover:border-primary/40 transition duration-300">
+                            <p class="text-primary text-[10px] uppercase tracking-widest font-semibold">GF-04</p>
+                            <p class="mt-1 font-medium text-xs"><span class="lang-en">Information Desk</span><span class="lang-ar">مكتب الاستعلامات</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 pt-4 border-t border-zinc-200 dark:border-zinc-800 flex flex-wrap gap-4 items-center justify-between text-xs text-zinc-500">
+                    <span class="flex items-center gap-1.5"><i class="fa-solid fa-elevator text-primary"></i> <span class="lang-en">Elevators & Escalators nearby</span><span class="lang-ar">المصاعد والأدراج الكهربائية متوفرة</span></span>
+                    <a href="#contact" class="font-semibold text-primary hover:underline uppercase tracking-wider text-[10px]"><span class="lang-en">Inquire tenant locations &rarr;</span><span class="lang-ar">استفسر عن مواقع محددة &larr;</span></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Section: Luxury Dining & Cafes -->
+<section id="dining" class="py-24 bg-zinc-50 dark:bg-luxuryGray-900 border-b border-zinc-100 dark:border-zinc-950">
+    <div class="max-w-7xl mx-auto px-6 sm:px-10">
+        
+        <!-- Header -->
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <span class="text-xs font-bold text-primary uppercase tracking-[0.25em] block mb-3"><span class="lang-en">Culinary Plaza</span><span class="lang-ar">ساحة المأكولات والمطاعم</span></span>
+            <h3 class="text-3xl sm:text-4xl font-light text-luxuryGray-900 dark:text-white mb-4 luxury-heading"><span class="lang-en">Dining & Cafes Directory</span><span class="lang-ar">أشهى المأكولات والمقاهي العائلية</span></h3>
+            <div class="w-12 h-[1px] bg-primary mx-auto mb-6"></div>
+            <p class="text-zinc-500 text-xs sm:text-sm tracking-wider font-light"><span class="lang-en">From traditional local grills to fast-casual food courts and legendary specialty dining.</span><span class="lang-ar">استمتع بتشكيلة واسعة من خيارات الطعام السريعة والمقاهي الهادئة والوجبات الآسيوية المفضلة.</span></p>
+        </div>
+
+        <!-- Featured Elite Dining Profile (Islamic Chinese Restaurant) -->
+        <div class="bg-white dark:bg-luxuryGray-950 border border-zinc-100 dark:border-zinc-900 rounded shadow-md p-8 sm:p-12 mb-12">
+            <div class="grid lg:grid-cols-12 gap-10 items-center">
+                <!-- Text Details -->
+                <div class="lg:col-span-7 space-y-5">
+                    <span class="px-3.5 py-1.5 rounded bg-primary/10 text-primary border border-primary/20 text-[10px] font-bold uppercase tracking-widest inline-flex items-center gap-1.5">
+                        <i class="fa-solid fa-star"></i> <span class="lang-en">Featured Culinary Highlight</span><span class="lang-ar">المطعم المميز الأكثر شعبية</span>
+                    </span>
+
+                    <h4 class="text-2xl sm:text-3xl font-light text-luxuryGray-900 dark:text-white leading-tight luxury-heading">
+                        <span class="lang-en block">Islamic Chinese Restaurant</span>
+                        <span class="lang-ar block">المطعم الصيني الإسلامي الشهير</span>
+                    </h4>
+
+                    <p class="text-[10px] text-zinc-400 uppercase tracking-widest font-semibold"><span class="lang-en">Level 2, Fine Dining Wing | 100% Halal Certified</span><span class="lang-ar">الطابق الثاني، جناح المطاعم | طعام حلال 100%</span></p>
+                    
+                    <div class="flex items-center gap-1 text-amber-500">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <span class="text-luxuryGray-900 dark:text-white font-semibold text-xs ml-3">4.6 / 5 Rating</span>
+                    </div>
+
+                    <p class="text-zinc-500 dark:text-zinc-400 text-sm font-light leading-relaxed">
+                        <span class="lang-en">Famous throughout Amman and surrounding regions, the Islamic Chinese Restaurant delivers authentic, high-quality Asian food cooked fresh. From hand-pulled traditional wok noodles to sizzling plates and classic family hotpots, the eatery caters to large weekend gatherings looking for quality, value, and wonderful hospitality.</span>
+                        <span class="lang-ar">يعد المطعم الصيني الإسلامي وجهة شهيرة ومحبوبة جداً في عمّان. يتميز بتقديم أشهى الأطباق الصينية والآسيوية المحضرة طازجة على أيدي طهاة خبراء، مثل النودلز المحضرة يدوياً واللحوم المشوية على اللهب المكشوف، مع الالتزام التام باللحوم والمكونات الحلال، في صالات طعام عائلية مريحة وفسيحة.</span>
+                    </p>
+
+                    <div class="flex flex-wrap items-center gap-4 pt-3">
+                        <a href="tel:065338570" class="bg-primary hover:bg-primary-dark text-luxuryGray-950 font-medium text-xs uppercase tracking-widest px-6 py-3.5 rounded transition shadow-md flex items-center gap-2">
+                            <i class="fa-solid fa-phone"></i>
+                            <span class="lang-en">Book Table / Order</span><span class="lang-ar">حجز طاولة أو طلب سفري</span>
+                        </a>
+                        <a href="https://wa.me/96265338570" target="_blank" class="border border-emerald-500 hover:bg-emerald-500 hover:text-white text-emerald-500 text-xs font-semibold uppercase tracking-widest px-6 py-3.5 rounded transition flex items-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-sm"></i>
+                            <span class="lang-en">Get Menu on WhatsApp</span><span class="lang-ar">اطلب قائمة الطعام</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Media Graphics Column -->
+                <div class="lg:col-span-5 relative group overflow-hidden rounded border border-zinc-100 dark:border-zinc-800 bg-zinc-100">
+                    <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=800&auto=format&fit=crop" 
+                         alt="Islamic Chinese Asian Food Platter" 
+                         class="w-full h-[340px] object-cover group-hover:scale-105 transition duration-500"
+                         onerror="this.src='https://placehold.co/800x600/121212/C5A880?text=Chinese+Halal+Food'">
+                    <div class="absolute bottom-4 right-4 left-4 bg-luxuryGray-950/95 text-white text-[10px] tracking-widest p-4 rounded flex items-center justify-between">
+                        <div>
+                            <p class="font-bold"><span class="lang-en">Open 12:00 PM - 11:30 PM</span><span class="lang-ar">مفتوح: 12:00 م - 11:30 م</span></p>
+                        </div>
+                        <span class="font-extrabold text-primary uppercase"><span class="lang-en">Level 2</span><span class="lang-ar">الطابق الثاني</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cafes, Desserts & Quick Eats Grid -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Cafe Option 1 -->
+            <div class="p-6 rounded border border-zinc-100 dark:border-zinc-900 bg-white dark:bg-luxuryGray-950 flex flex-col justify-between group hover:shadow-lg transition duration-500">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-[9px] uppercase font-bold text-primary tracking-widest bg-primary/10 px-2 py-1 rounded"><span class="lang-en">Specialty Cafe</span><span class="lang-ar">مقهى مختص</span></span>
+                        <span class="text-[10px] text-zinc-400 font-bold uppercase tracking-widest"><span class="lang-en">Ground Floor</span><span class="lang-ar">الطابق الأرضي</span></span>
+                    </div>
+                    <h4 class="font-semibold text-lg text-luxuryGray-900 dark:text-white mb-2"><span class="lang-en">The Gold Roast Cafe</span><span class="lang-ar">مقهى غولد روست</span></h4>
+                    <p class="text-zinc-500 text-xs sm:text-sm font-light mb-6 leading-relaxed"><span class="lang-en">Specialty coffees, fresh croissants, and quick business-friendly work seating with free WiFi access.</span><span class="lang-ar">قهوة اسبريسو مختصة، معجنات وحلويات فرنسية، وجلسات هادئة ملائمة للعمل مع توفر إنترنت مجاني.</span></p>
+                </div>
+                <div class="flex items-center justify-between pt-4 border-t border-zinc-50 dark:border-zinc-900 text-xs text-zinc-400">
+                    <span><i class="fa-solid fa-clock text-primary"></i> 09:00 AM - 11:00 PM</span>
+                    <a href="tel:065338570" class="font-semibold text-primary hover:underline uppercase tracking-widest text-[10px]"><span class="lang-en">Call Desk</span><span class="lang-ar">اتصال</span></a>
+                </div>
+            </div>
+
+            <!-- Cafe Option 2 -->
+            <div class="p-6 rounded border border-zinc-100 dark:border-zinc-900 bg-white dark:bg-luxuryGray-950 flex flex-col justify-between group hover:shadow-lg transition duration-500">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-[9px] uppercase font-bold text-primary tracking-widest bg-primary/10 px-2 py-1 rounded"><span class="lang-en">Fast Food Court</span><span class="lang-ar">وجبات سريعة</span></span>
+                        <span class="text-[10px] text-zinc-400 font-bold uppercase tracking-widest"><span class="lang-en">Second Floor</span><span class="lang-ar">الطابق الثاني</span></span>
+                    </div>
+                    <h4 class="font-semibold text-lg text-luxuryGray-900 dark:text-white mb-2"><span class="lang-en">Levant Gourmet Grill</span><span class="lang-ar">شواية بلاد الشام</span></h4>
+                    <p class="text-zinc-500 text-xs sm:text-sm font-light mb-6 leading-relaxed"><span class="lang-en">Quick traditional Jordanian Mansaf, family grills, cold mezze starters, and hot Levantine appetizers.</span><span class="lang-ar">أشهى المشويات الشامية، والمنسف الأردني العريق بأجود المكونات المحلية والبلدية لجميع أفراد العائلة.</span></p>
+                </div>
+                <div class="flex items-center justify-between pt-4 border-t border-zinc-50 dark:border-zinc-900 text-xs text-zinc-400">
+                    <span><i class="fa-solid fa-clock text-primary"></i> 11:30 AM - 11:00 PM</span>
+                    <a href="tel:065338570" class="font-semibold text-primary hover:underline uppercase tracking-widest text-[10px]"><span class="lang-en">Call Desk</span><span class="lang-ar">اتصال</span></a>
+                </div>
+            </div>
+
+            <!-- Cafe Option 3 -->
+            <div class="p-6 rounded border border-zinc-100 dark:border-zinc-900 bg-white dark:bg-luxuryGray-950 flex flex-col justify-between group hover:shadow-lg transition duration-500">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-[9px] uppercase font-bold text-primary tracking-widest bg-primary/10 px-2 py-1 rounded"><span class="lang-en">Desserts</span><span class="lang-ar">حلويات ومعجنات</span></span>
+                        <span class="text-[10px] text-zinc-400 font-bold uppercase tracking-widest"><span class="lang-en">Ground Floor</span><span class="lang-ar">الطابق الأرضي</span></span>
+                    </div>
+                    <h4 class="font-semibold text-lg text-luxuryGray-900 dark:text-white mb-2"><span class="lang-en">Kunafeh & Arabic Sweets</span><span class="lang-ar">كنافة وحلويات الشرق</span></h4>
+                    <p class="text-zinc-500 text-xs sm:text-sm font-light mb-6 leading-relaxed"><span class="lang-en">Premium Kunafeh served warm, traditional Turkish baklava, specialty coffee, tea and traditional hospitality.</span><span class="lang-ar">الكنافة البلدية الساخنة، والحلويات الشرقية المشكلة والتركية الفاخرة، مع الشاي والقهوة العربية الأصيلة.</span></p>
+                </div>
+                <div class="flex items-center justify-between pt-4 border-t border-zinc-50 dark:border-zinc-900 text-xs text-zinc-400">
+                    <span><i class="fa-solid fa-clock text-primary"></i> 10:00 AM - 11:00 PM</span>
+                    <a href="tel:065338570" class="font-semibold text-primary hover:underline uppercase tracking-widest text-[10px]"><span class="lang-en">Call Desk</span><span class="lang-ar">اتصال</span></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Section: Luxury Family & Kids Entertainment -->
+<section id="entertainment" class="py-24 bg-white dark:bg-luxuryGray-950 border-b border-zinc-100 dark:border-zinc-900">
+    <div class="max-w-7xl mx-auto px-6 sm:px-10">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+            
+            <!-- Details Panel -->
+            <div class="space-y-6">
+                <div class="flex items-center gap-3">
+                    <span class="w-12 h-[1px] bg-primary"></span>
+                    <span class="text-xs font-bold uppercase tracking-[0.25em] text-primary"><span class="lang-en">Recreational Haven</span><span class="lang-ar">مساحات ترفيهية متكاملة</span></span>
+                </div>
+
+                <h3 class="text-3xl sm:text-4xl font-light text-luxuryGray-900 dark:text-white leading-tight luxury-heading">
+                    <span class="lang-en block">Unmatched Entertainment & <br><span class="italic text-primary font-normal">Family Comfort</span></span>
+                    <span class="lang-ar block">ترفيه عائلي راقٍ ومبهج <br><span class="italic text-primary font-normal">لكافة أفراد العائلة</span></span>
+                </h3>
+
+                <p class="text-zinc-500 dark:text-zinc-400 text-sm sm:text-base font-light leading-relaxed">
+                    <span class="lang-en">We believe a commercial trip is only complete when all family members feel comfortable and excited. Majdi Mall hosts some of Amman's most active and clean kids play areas, trampoline fields, arcade hubs, and safe activity centers. Families enjoy spacious walkways, comfortable seating configurations, wheelchair access, prayer suites, and premium facilities designed for accessibility.</span>
+                    <span class="lang-ar">نؤمن بأن رحلة التسوق لا تكتمل إلا بابتسامة طفلك. يضم المول صالات ألعاب مجهزة، ومراكز ترامبولين وألعاب فيديو آمنة ومدروسة كلياً، مع مرافق وتسهيلات وخدمات صُممت لتمنح الأمهات والآباء راحة بال مطلقة وأمان عائلي متكامل في كافة أرجاء المجمع التجاري.</span>
+                </p>
+
+                <!-- Key Bullet Lists with minimalist designs -->
+                <div class="grid sm:grid-cols-2 gap-4 text-xs tracking-wider uppercase text-zinc-500 dark:text-zinc-400 font-semibold pt-4">
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-primary"></i> <span class="lang-en">Kids castle arena</span><span class="lang-ar">قلعة ألعاب الأطفال</span></div>
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-primary"></i> <span class="lang-en">Safe, enclosed play hubs</span><span class="lang-ar">بيئة لعب مغلقة وآمنة</span></div>
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-primary"></i> <span class="lang-en">Complimentary strollers</span><span class="lang-ar">عربات أطفال متوفرة</span></div>
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-primary"></i> <span class="lang-en">Bilingual guides & safety</span><span class="lang-ar">إرشاد ومساعدة بلغات متعددة</span></div>
+                </div>
+            </div>
+
+            <!-- Large Media Panel with realistic shopping gallery images -->
+            <div class="relative rounded overflow-hidden shadow-2xl border border-zinc-100 dark:border-zinc-900 h-[420px] bg-zinc-200">
+                <img src="https://images.unsplash.com/photo-1543807535-eceef0bc6599?q=80&w=800&auto=format&fit=crop" 
+                     alt="Safe and clean family play area" class="w-full h-full object-cover"
+                     onerror="this.src='https://placehold.co/800x600/121212/C5A880?text=Family+Play+Area'">
+                <div class="absolute inset-0 bg-gradient-to-t from-luxuryGray-950/75 via-transparent to-transparent"></div>
+                <div class="absolute bottom-6 left-6 right-6 flex justify-between items-center text-white text-[10px] uppercase tracking-widest">
+                    <span><i class="fa-solid fa-gamepad text-primary"></i> <span class="lang-en">Level 2 Activity Zone</span><span class="lang-ar">الطابق الثاني - منطقة الأنشطة</span></span>
+                    <span class="text-primary font-bold"><span class="lang-en">Open Daily</span><span class="lang-ar">مفتوح يومياً</span></span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Section: Luxury Offers & Campaigns -->
+<section id="events" class="py-24 bg-zinc-50 dark:bg-luxuryGray-900 border-b border-zinc-100 dark:border-zinc-950">
+    <div class="max-w-7xl mx-auto px-6 sm:px-10">
+        
+        <!-- Header -->
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <span class="text-xs font-bold text-primary uppercase tracking-[0.25em] block mb-3"><span class="lang-en">Events & Campaigns</span><span class="lang-ar">العروض والفعاليات الحالية</span></span>
+            <h3 class="text-3xl sm:text-4xl font-light text-luxuryGray-900 dark:text-white mb-4 luxury-heading"><span class="lang-en">Weekly Offers & Seasonal Events</span><span class="lang-ar">أحدث العروض والأنشطة العائلية</span></h3>
+            <div class="w-12 h-[1px] bg-primary mx-auto mb-6"></div>
+            <p class="text-zinc-500 text-xs sm:text-sm tracking-wider font-light"><span class="lang-en">Stay up to date with community events, holiday markets, and exclusive savings cards.</span><span class="lang-ar">لا تفوت التخفيضات المميزة في السوبرماركت ومحلات الألبسة والألعاب بأسعار تلائم الجميع.</span></p>
+        </div>
+
+        <!-- Horizontal Row with 3 Elegant Promotion Cards -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Offer 1 -->
+            <div class="bg-white dark:bg-luxuryGray-950 border border-zinc-100 dark:border-zinc-900 rounded overflow-hidden shadow-sm flex flex-col justify-between hover:shadow-xl transition duration-500 group relative">
+                <span class="absolute top-4 left-4 z-10 bg-primary text-luxuryGray-950 text-[9px] font-bold tracking-widest px-3 py-1 rounded-full uppercase"><span class="lang-en">30% OFF</span><span class="lang-ar">خصم 30%</span></span>
+                <div class="h-56 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=600&auto=format&fit=crop" 
+                         alt="Fashion Campaign clearance" class="w-full h-full object-cover group-hover:scale-105 transition duration-700 opacity-90"
+                         onerror="this.src='https://placehold.co/600x400/121212/C5A880?text=Clearance'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-luxuryGray-950/80 to-transparent"></div>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h4 class="font-semibold text-lg text-luxuryGray-900 dark:text-white mb-1"><span class="lang-en">Al-Haram Clearance Days</span><span class="lang-ar">تخفيضات الحرم بلازا الكبرى</span></h4>
+                        <p class="text-[9px] text-primary uppercase tracking-widest font-semibold mb-4"><span class="lang-en">Applicable on select outlets</span><span class="lang-ar">يسري في أقسام ومتاجر مختارة</span></p>
+                        <p class="text-zinc-500 text-xs font-light mb-6 leading-relaxed"><span class="lang-en">Refresh your family wardrobe with major seasonal discounts on jackets, dresses, kids wear, and shoes.</span><span class="lang-ar">جددوا خزانة ملابس عائلتكم مع الخصومات الكبرى المتاحة على الألبسة الرجالية والنسائية وألبسة الأطفال.</span></p>
+                    </div>
+                    <div class="pt-4 border-t border-zinc-100 dark:border-zinc-900 flex items-center justify-between text-[10px] tracking-widest uppercase text-zinc-400 font-bold">
+                        <span><span class="lang-en">Ends in:</span><span class="lang-ar">تنتهي خلال:</span></span>
+                        <span class="text-primary" id="timer-offer-1">3 days, 12h</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Offer 2 -->
+            <div class="bg-white dark:bg-luxuryGray-950 border border-zinc-100 dark:border-zinc-900 rounded overflow-hidden shadow-sm flex flex-col justify-between hover:shadow-xl transition duration-500 group relative">
+                <span class="absolute top-4 left-4 z-10 bg-primary text-luxuryGray-950 text-[9px] font-bold tracking-widest px-3 py-1 rounded-full uppercase"><span class="lang-en">Fresh Fest</span><span class="lang-ar">مهرجان الطازج</span></span>
+                <div class="h-56 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=600&auto=format&fit=crop" 
+                         alt="Supermarket grocery clearance" class="w-full h-full object-cover group-hover:scale-105 transition duration-700 opacity-90"
+                         onerror="this.src='https://placehold.co/600x400/121212/C5A880?text=Fresh+Deals'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-luxuryGray-950/80 to-transparent"></div>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h4 class="font-semibold text-lg text-luxuryGray-900 dark:text-white mb-1"><span class="lang-en">Majdi Supermarket Fresh Sale</span><span class="lang-ar">عرض السوبرماركت على الطازج</span></h4>
+                        <p class="text-[9px] text-primary uppercase tracking-widest font-semibold mb-4"><span class="lang-en">Bundle deals available</span><span class="lang-ar">توفير رائع على السلال الغذائية</span></p>
+                        <p class="text-zinc-500 text-xs font-light mb-6 leading-relaxed"><span class="lang-en">High savings on premium imported items, organic household goods, cleaning supplies, and fresh meats.</span><span class="lang-ar">خصومات ممتازة وتخفيضات تصل لنصف السعر على المنظفات، الخضروات الطازجة واللحوم المستوردة.</span></p>
+                    </div>
+                    <div class="pt-4 border-t border-zinc-100 dark:border-zinc-900 flex items-center justify-between text-[10px] tracking-widest uppercase text-zinc-400 font-bold">
+                        <span><span class="lang-en">Ends in:</span><span class="lang-ar">تنتهي خلال:</span></span>
+                        <span class="text-primary" id="timer-offer-2">4 hours remaining</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Offer 3 -->
+            <div class="bg-white dark:bg-luxuryGray-950 border border-zinc-100 dark:border-zinc-900 rounded overflow-hidden shadow-sm flex flex-col justify-between hover:shadow-xl transition duration-500 group relative">
+                <span class="absolute top-4 left-4 z-10 bg-primary text-luxuryGray-950 text-[9px] font-bold tracking-widest px-3 py-1 rounded-full uppercase"><span class="lang-en">BOGO Deal</span><span class="lang-ar">عرض خاص</span></span>
+                <div class="h-56 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1566454544259-f4b94c3d758c?q=80&w=600&auto=format&fit=crop" 
+                         alt="Play area token deals" class="w-full h-full object-cover group-hover:scale-105 transition duration-700 opacity-90"
+                         onerror="this.src='https://placehold.co/600x400/121212/C5A880?text=Kids+BOGO'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-luxuryGray-950/80 to-transparent"></div>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h4 class="font-semibold text-lg text-luxuryGray-900 dark:text-white mb-1"><span class="lang-en">Kids Play Zone Token Bonanza</span><span class="lang-ar">مهرجان الكروت المجانية للأطفال</span></h4>
+                        <p class="text-[9px] text-primary uppercase tracking-widest font-semibold mb-4"><span class="lang-en">Every Friday afternoon</span><span class="lang-ar">يسري عصر كل يوم جمعة</span></p>
+                        <p class="text-zinc-500 text-xs font-light mb-6 leading-relaxed"><span class="lang-en">Buy a 20JD gaming play card, and receive 10JD play credit completely free. Full access to play areas.</span><span class="lang-ar">اشحن كرت الألعاب بقيمة 20 ديناراً واحصل على 10 دنانير إضافية مجاناً مع دخول كامل لمدينة المراجيح والترامبولين.</span></p>
+                    </div>
+                    <div class="pt-4 border-t border-zinc-100 dark:border-zinc-900 flex items-center justify-between text-[10px] tracking-widest uppercase text-zinc-400 font-bold">
+                        <span><span class="lang-en">Ends in:</span><span class="lang-ar">تنتهي خلال:</span></span>
+                        <span class="text-primary" id="timer-offer-3">5 days, 8h</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Upcoming Cultural & Family Events Grid -->
+        <div class="mt-20 pt-16 border-t border-zinc-150 dark:border-zinc-900">
+            <h4 class="text-center font-serif font-light text-2xl text-luxuryGray-900 dark:text-white mb-12"><span class="lang-en">Upcoming Mall Activities</span><span class="lang-ar">الفعاليات والأنشطة القادمة بالمول</span></h4>
+            
+            <div class="grid lg:grid-cols-2 gap-8">
+                <!-- Event block 1 -->
+                <div class="p-6 bg-white dark:bg-luxuryGray-950 border border-zinc-100 dark:border-zinc-900 rounded flex flex-col sm:flex-row gap-6 items-start hover:border-primary/40 transition">
+                    <div class="w-full sm:w-28 h-28 shrink-0 bg-primary/10 text-primary flex flex-col items-center justify-center rounded border border-primary/20 text-center">
+                        <span class="text-3xl font-light tracking-widest block font-serif">18</span>
+                        <span class="text-[9px] font-bold uppercase tracking-widest"><span class="lang-en">June</span><span class="lang-ar">يونيو</span></span>
+                    </div>
+                    <div>
+                        <span class="text-[9px] uppercase tracking-widest font-semibold text-primary bg-primary/10 px-2.5 py-1 rounded inline-block mb-2"><span class="lang-en">Kids Fun</span><span class="lang-ar">نشاط أطفال</span></span>
+                        <h5 class="font-semibold text-base text-luxuryGray-900 dark:text-white mb-2"><span class="lang-en">Family Fun & Balloon Art Days</span><span class="lang-ar">مهرجان البالونات وألعاب خفة اليد</span></h5>
+                        <p class="text-zinc-500 text-xs font-light leading-relaxed"><span class="lang-en">Bring your toddlers for fully supervised face painting, custom balloon twisting, cartoon characters parade, and fun prize drawings.</span><span class="lang-ar">شاركونا الفرحة مع رسم الوجوه مجاناً للأطفال وتشكيل البالونات وشخصيات الكرتون والجوائز السريعة للجميع.</span></p>
+                    </div>
+                </div>
+
+                <!-- Event block 2 -->
+                <div class="p-6 bg-white dark:bg-luxuryGray-950 border border-zinc-100 dark:border-zinc-900 rounded flex flex-col sm:flex-row gap-6 items-start hover:border-primary/40 transition">
+                    <div class="w-full sm:w-28 h-28 shrink-0 bg-primary/10 text-primary flex flex-col items-center justify-center rounded border border-primary/20 text-center">
+                        <span class="text-3xl font-light tracking-widest block font-serif">25</span>
+                        <span class="text-[9px] font-bold uppercase tracking-widest"><span class="lang-en">June</span><span class="lang-ar">يونيو</span></span>
+                    </div>
+                    <div>
+                        <span class="text-[9px] uppercase tracking-widest font-semibold text-primary bg-primary/10 px-2.5 py-1 rounded inline-block mb-2"><span class="lang-en">Heritage Day</span><span class="lang-ar">تراثي وثقافي</span></span>
+                        <h5 class="font-semibold text-base text-luxuryGray-900 dark:text-white mb-2"><span class="lang-en">Jordanian Artisan Craft Fair</span><span class="lang-ar">بازار الحرف والمطرزات التراثية</span></h5>
+                        <p class="text-zinc-500 text-xs font-light leading-relaxed"><span class="lang-en">Explore beautiful live mosaic building displays from Madaba experts, local pottery workshops, embroidery panels, and complimentary herbal Arabic tea tastings.</span><span class="lang-ar">استكشفوا أجمل المشغولات التراثية والفسيفساء الحية على أيدي أمهر الحرفيين وصناع الفخار مع تذوق شاي الأعشاب الفاخر.</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Section: Luxury Interactive Media Gallery -->
+<section id="gallery" class="py-24 bg-white dark:bg-luxuryGray-950 border-b border-zinc-100 dark:border-zinc-900">
+    <div class="max-w-7xl mx-auto px-6 sm:px-10">
+        
+        <!-- Header -->
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <span class="text-xs font-bold text-primary uppercase tracking-[0.25em] block mb-3"><span class="lang-en">Visual Gallery</span><span class="lang-ar">معرض الصور الحية</span></span>
+            <h3 class="text-3xl sm:text-4xl font-light text-luxuryGray-900 dark:text-white mb-4 luxury-heading"><span class="lang-en">Visual Journey inside Majdi Mall</span><span class="lang-ar">جولة بصرية داخل المول</span></h3>
+            <div class="w-12 h-[1px] bg-primary mx-auto mb-6"></div>
+            <p class="text-zinc-500 text-xs sm:text-sm tracking-wider font-light"><span class="lang-en">Sneak-peek inside our clean corridors, bright family plazas, and active events.</span><span class="lang-ar">ألقوا نظرة على الأروقة المبهجة والمساحات الترفيهية للأطفال ومواقف السيارات الفسيحة والمجهزة.</span></p>
+        </div>
+
+        <!-- Filter Buttons for Gallery -->
+        <div class="flex flex-wrap justify-center items-center gap-2 mb-10">
+            <button onclick="filterGallery('all')" class="gallery-tab-btn active px-4 py-2 rounded text-[10px] uppercase tracking-widest font-semibold border border-primary bg-primary/10 text-primary transition duration-300"><span class="lang-en">All Photos</span><span class="lang-ar">الكل</span></button>
+            <button onclick="filterGallery('interior')" class="gallery-tab-btn px-4 py-2 rounded text-[10px] uppercase tracking-widest font-semibold border border-zinc-100 dark:border-zinc-900 text-zinc-500 hover:text-primary transition duration-300"><span class="lang-en">Interior</span><span class="lang-ar">داخل المول</span></button>
+            <button onclick="filterGallery('shops')" class="gallery-tab-btn px-4 py-2 rounded text-[10px] uppercase tracking-widest font-semibold border border-zinc-100 dark:border-zinc-900 text-zinc-500 hover:text-primary transition duration-300"><span class="lang-en">Stores</span><span class="lang-ar">المحلات</span></button>
+            <button onclick="filterGallery('dining')" class="gallery-tab-btn px-4 py-2 rounded text-[10px] uppercase tracking-widest font-semibold border border-zinc-100 dark:border-zinc-900 text-zinc-500 hover:text-primary transition duration-300"><span class="lang-en">Dining</span><span class="lang-ar">المطاعم</span></button>
+            <button onclick="filterGallery('family')" class="gallery-tab-btn px-4 py-2 rounded text-[10px] uppercase tracking-widest font-semibold border border-zinc-100 dark:border-zinc-900 text-zinc-500 hover:text-primary transition duration-300"><span class="lang-en">Activities</span><span class="lang-ar">أنشطة عائلية</span></button>
+        </div>
+
+        <!-- Visual Mosaic Grid (4 Column Layout) -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4" id="gallery-grid-items">
+            
+            <!-- Card 1 -->
+            <div class="gallery-card overflow-hidden rounded border border-zinc-100 dark:border-zinc-900 aspect-square group relative cursor-pointer bg-zinc-200" 
+                 data-cat="interior" onclick="openLightbox(0)">
+                <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?q=80&w=600&auto=format&fit=crop" 
+                     alt="Clean Spaced Mall Corridors" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-luxuryGray-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                    <span class="text-[9px] font-bold text-white uppercase tracking-widest"><span class="lang-en">Modern Interior</span><span class="lang-ar">أروقة المول الحديثة</span></span>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="gallery-card overflow-hidden rounded border border-zinc-100 dark:border-zinc-900 aspect-square group relative cursor-pointer bg-zinc-200" 
+                 data-cat="shops" onclick="openLightbox(1)">
+                <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=600&auto=format&fit=crop" 
+                     alt="Fashion Boutiques Store layouts" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-luxuryGray-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                    <span class="text-[9px] font-bold text-white uppercase tracking-widest"><span class="lang-en">Fashion Outlets</span><span class="lang-ar">أروقة الأزياء والموضة</span></span>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="gallery-card overflow-hidden rounded border border-zinc-100 dark:border-zinc-900 aspect-square group relative cursor-pointer bg-zinc-200" 
+                 data-cat="dining" onclick="openLightbox(2)">
+                <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=600&auto=format&fit=crop" 
+                     alt="Food Court eating plates" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-luxuryGray-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                    <span class="text-[9px] font-bold text-white uppercase tracking-widest"><span class="lang-en">Elite Dining plazas</span><span class="lang-ar">ساحة المطاعم الراقية</span></span>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="gallery-card overflow-hidden rounded border border-zinc-100 dark:border-zinc-900 aspect-square group relative cursor-pointer bg-zinc-200" 
+                 data-cat="family" onclick="openLightbox(3)">
+                <img src="https://images.unsplash.com/photo-1543807535-eceef0bc6599?q=80&w=600&auto=format&fit=crop" 
+                     alt="Kids Activity zones" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-luxuryGray-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                    <span class="text-[9px] font-bold text-white uppercase tracking-widest"><span class="lang-en">Kids Play Castles</span><span class="lang-ar">منطقة ألعاب الأطفال والترامبولين</span></span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Lightbox Modal Layer (Standard Hidden Blueprint) -->
+<div id="lightbox" class="fixed inset-0 bg-luxuryGray-950/98 z-50 hidden flex-col justify-center items-center p-4">
+    <button onclick="closeLightbox()" class="absolute top-6 right-6 text-white hover:text-primary text-3xl transition" aria-label="Close Lightbox">
+        <i class="fa-solid fa-xmark"></i>
+    </button>
+    <div class="max-w-4xl w-full flex items-center justify-between">
+        <button onclick="prevImage()" class="text-white hover:text-primary text-2xl p-4 transition" aria-label="Previous">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <div class="relative w-full aspect-[4/3] max-h-[80vh] flex justify-center items-center">
+            <img id="lightbox-img" src="" alt="Enlarged Shopping Gallery Item" class="max-w-full max-h-full rounded object-contain border border-zinc-900 shadow-2xl">
+        </div>
+        <button onclick="nextImage()" class="text-white hover:text-primary text-2xl p-4 transition" aria-label="Next">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    </div>
+</div>
+
+<!-- Section: Luxury Reviews & Commitment to Excellence -->
+<section class="py-24 bg-zinc-50 dark:bg-luxuryGray-900 border-b border-zinc-100 dark:border-zinc-950">
+    <div class="max-w-7xl mx-auto px-6 sm:px-10">
+        <div class="grid lg:grid-cols-12 gap-16 items-center">
+            
+            <!-- Left Chart Details (Overall Scoring Representation) -->
+            <div class="lg:col-span-4 bg-white dark:bg-luxuryGray-950 p-8 rounded border border-zinc-100 dark:border-zinc-900 text-center shadow-sm">
+                <h4 class="text-6xl font-light font-serif text-primary mb-3">3.7</h4>
+                <div class="flex justify-center gap-1.5 text-amber-500 text-lg mb-3">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p class="font-semibold text-[10px] uppercase tracking-widest text-zinc-500 mb-8"><span class="lang-en">8,141 Google Reviews</span><span class="lang-ar">تقييم مبني على 8,141 رأي حقيقي</span></p>
+                
+                <!-- Ratings Distribution Chart Bars (Minimalized) -->
+                <div class="space-y-3.5 text-xs text-zinc-400 font-medium">
+                    <div class="flex items-center gap-3">
+                        <span class="w-8 text-left shrink-0">5 <i class="fa-solid fa-star text-[9px] text-amber-500"></i></span>
+                        <div class="flex-1 h-1.5 bg-zinc-100 dark:bg-luxuryGray-900 rounded overflow-hidden">
+                            <div class="bg-primary h-full w-[55%]"></div>
+                        </div>
+                        <span class="w-8 text-right shrink-0">55%</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="w-8 text-left shrink-0">4 <i class="fa-solid fa-star text-[9px] text-amber-500"></i></span>
+                        <div class="flex-1 h-1.5 bg-zinc-100 dark:bg-luxuryGray-900 rounded overflow-hidden">
+                            <div class="bg-primary h-full w-[25%]"></div>
+                        </div>
+                        <span class="w-8 text-right shrink-0">25%</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="w-8 text-left shrink-0">3 <i class="fa-solid fa-star text-[9px] text-amber-500"></i></span>
+                        <div class="flex-1 h-1.5 bg-zinc-100 dark:bg-luxuryGray-900 rounded overflow-hidden">
+                            <div class="bg-primary h-full w-[12%]"></div>
+                        </div>
+                        <span class="w-8 text-right shrink-0">12%</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="w-8 text-left shrink-0">2 <i class="fa-solid fa-star text-[9px] text-amber-500"></i></span>
+                        <div class="flex-1 h-1.5 bg-zinc-100 dark:bg-luxuryGray-900 rounded overflow-hidden">
+                            <div class="bg-primary h-full w-[5%]"></div>
+                        </div>
+                        <span class="w-8 text-right shrink-0">5%</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="w-8 text-left shrink-0">1 <i class="fa-solid fa-star text-[9px] text-amber-500"></i></span>
+                        <div class="flex-1 h-1.5 bg-zinc-100 dark:bg-luxuryGray-900 rounded overflow-hidden">
+                            <div class="bg-primary h-full w-[3%]"></div>
+                        </div>
+                        <span class="w-8 text-right shrink-0">3%</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Testimonials & Upgrades Showcase (Feedback loop) -->
+            <div class="lg:col-span-8 space-y-8">
+                <div>
+                    <span class="text-xs font-bold text-primary uppercase tracking-[0.25em] block mb-3"><span class="lang-en">Continuous Improvement</span><span class="lang-ar">التزامنا مستمر بتحسين تجربتكم</span></span>
+                    <h3 class="text-3xl sm:text-4xl font-light text-luxuryGray-900 dark:text-white mb-4 luxury-heading"><span class="lang-en">We Are Listening and Evolving</span><span class="lang-ar">ملتزمون بتوفير أرقى تجارب التسوق</span></h3>
+                    <p class="text-zinc-500 dark:text-zinc-400 text-sm leading-relaxed font-light">
+                        <span class="lang-en">We actively evaluate customer feedback to align our complex operations with modern expectations. To serve Amman with high-end convenience, we have initiated wide-ranging updates: newly renovated sanitation wings, enhanced escalator paths, expanded safe playground surfaces, and high-fidelity indoor network signals. Your journey remains our prime pursuit.</span>
+                        <span class="lang-ar">نحرص في إدارة سوق مجدي على قراءة ومراجعة ملاحظاتكم بشكل يومي. لتوفير أجواء تسوق مثالية، نعمل حالياً على تطوير دورات المياه، توفير ممرات أوسع للعربات، ترقية أنظمة التكييف، وتوسيع غرف الصلاة والخدمات المتنوعة لتكون دوماً بالمستوى المطلوب.</span>
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6 pt-4">
+                    <div class="p-5 rounded border border-zinc-150 dark:border-zinc-900 bg-white dark:bg-luxuryGray-950 text-xs sm:text-sm">
+                        <p class="italic text-zinc-500 dark:text-zinc-400 mb-4 font-light"><span class="lang-en">"Majdi Mall has improved significantly. Free double-level parking is extremely useful on weekends, stroller paths are beautifully integrated, and customer desk staff are helpful."</span><span class="lang-ar">"سوق مجدي خياري الأسبوعي للتسوق العائلي ومشتريات السوبرماركت ومراجيح الأطفال، ممرات العربات مجهزة والمواقف مجانية بالكامل ومحمية."</span></p>
+                        <h5 class="font-semibold text-primary uppercase tracking-widest text-[10px]"><span class="lang-en">- Ruba Masri</span><span class="lang-ar">- ربى المصري</span></h5>
+                    </div>
+                    <div class="p-5 rounded border border-zinc-150 dark:border-zinc-900 bg-white dark:bg-luxuryGray-950 text-xs sm:text-sm">
+                        <p class="italic text-zinc-500 dark:text-zinc-400 mb-4 font-light"><span class="lang-en">"The iconic Islamic Chinese Restaurant on the second floor serves incredible authentic halal plates. Finding directory items has become incredibly clean and rapid online."</span><span class="lang-ar">"المطعم الصيني الإسلامي في الطابق الثاني يقدم وجبات شهية جداً وبأسعار ملائمة للجميع ودليل المحلات بالموقع مريح وبسيط."</span></p>
+                        <h5 class="font-semibold text-primary uppercase tracking-widest text-[10px]"><span class="lang-en">- Tareq Al-Asmar</span><span class="lang-ar">- طارق الأسمر</span></h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Section: Retail Spaces & Corporate Leasing -->
+<section id="leasing" class="py-24 bg-white dark:bg-luxuryGray-950 border-b border-zinc-100 dark:border-zinc-900">
+    <div class="max-w-7xl mx-auto px-6 sm:px-10">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+            
+            <!-- Information Column -->
+            <div class="space-y-6">
+                <div class="flex items-center gap-3">
+                    <span class="w-12 h-[1px] bg-primary"></span>
+                    <span class="text-xs font-bold uppercase tracking-[0.25em] text-primary"><span class="lang-en">Commercial Opportunities</span><span class="lang-ar">فرص استثمارية وتجارية</span></span>
+                </div>
+
+                <h3 class="text-3xl sm:text-4xl font-light text-luxuryGray-900 dark:text-white leading-tight luxury-heading">
+                    <span class="lang-en block">Expand Your Brand with Us: <br><span class="italic text-primary font-normal">Lease Space Instantly</span></span>
+                    <span class="lang-ar block">انضم لمسيرة النجاح: <br><span class="italic text-primary font-normal">احجز مساحتك التجارية والتأجيرية</span></span>
+                </h3>
+
+                <p class="text-zinc-500 dark:text-zinc-400 text-sm sm:text-base font-light leading-relaxed">
+                    <span class="lang-en">With daily visitor footfall on Queen Rania Street, Majdi Mall provides premier commercial exposure for international franchises, local family boutiques, financial outlets, specialty kiosks, and major restaurants. Secure highly customizable configurations, fast utilities routing, and active corporate marketing campaigns supporting your rental space.</span>
+                    <span class="lang-ar">بفضل التدفق اليومي الهائل للمتسوقين وزوار شارع الملكة رانيا العريق، يمنحكم سوق مجدي أفضل فرصة لتوسيع نطاق أعمالكم وافتتاح علامتكم التجارية. نحن نقدم مساحات تجارية مرنة ومجهزة بخدمات متكاملة، شبكات اتصالات وخدمات لوجستية داعمة لجميع المستأجرين.</span>
+                </p>
+
+                <!-- Checkpoints list -->
+                <ul class="space-y-3.5 text-xs text-zinc-500 dark:text-zinc-400 uppercase tracking-wider font-semibold">
+                    <li class="flex items-center gap-3.5"><i class="fa-solid fa-circle-check text-primary"></i> <span class="lang-en">Units starting from 20 sqm up to anchor layouts</span><span class="lang-ar">مساحات مرنة من 20 متراً مربعاً إلى صالات عرض ضخمة</span></li>
+                    <li class="flex items-center gap-3.5"><i class="fa-solid fa-circle-check text-primary"></i> <span class="lang-en">High-end marketing on active corporate feeds</span><span class="lang-ar">دعم تسويقي مستمر عبر منصات التواصل والحملات الإعلانية للمول</span></li>
+                    <li class="flex items-center gap-3.5"><i class="fa-solid fa-circle-check text-primary"></i> <span class="lang-en">Dedicated logistics platforms and freight access</span><span class="lang-ar">توفر مصاعد شحن مخصصة لسهولة التفريغ والتحميل</span></li>
+                </ul>
+            </div>
+
+            <!-- Interactive Leasing Form Container (Clean High-End) -->
+            <div class="p-8 sm:p-10 bg-zinc-50 dark:bg-luxuryGray-900 border border-zinc-100 dark:border-zinc-900 rounded shadow-sm">
+                <h4 class="font-semibold text-lg text-luxuryGray-900 dark:text-white mb-6 flex items-center gap-3">
+                    <i class="fa-solid fa-file-signature text-primary"></i>
+                    <span class="lang-en">Rental Space Application</span><span class="lang-ar">طلب استئجار مساحة تجارية</span>
+                </h4>
+
+                <form id="leasing-apply-form" class="space-y-5" onsubmit="handleLeasingForm(event)">
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-[9px] font-bold text-zinc-500 uppercase tracking-widest mb-1.5"><span class="lang-en">Brand / Company *</span><span class="lang-ar">الشركة أو العلامة التجارية *</span></label>
+                            <input type="text" required class="w-full bg-white dark:bg-luxuryGray-950 border border-zinc-100 dark:border-zinc-900 rounded px-4 py-2.5 text-xs text-luxuryGray-900 dark:text-white focus:border-primary focus:outline-none" placeholder="Brand Name">
+                        </div>
+                        <div>
+                            <label class="block text-[9px] font-bold text-zinc-500 uppercase tracking-widest mb-1.5"><span class="lang-en">Contact Name *</span><span class="lang-ar">اسم مسؤول التواصل *</span></label>
+                            <input type="text" required class="w-full bg-white dark:bg-luxuryGray-950 border border-zinc-100 dark:border-zinc-900 rounded px-4 py-2.5 text-xs text-luxuryGray-900 dark:text-white focus:border-primary focus:outline-none" placeholder="Ahmad Al-Omari">
+                        </div>
+                    </div>
+
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-[9px] font-bold text-zinc-500 uppercase tracking-widest mb-1.5"><span class="lang-en">Email Address *</span><span class="lang-ar">البريد الإلكتروني *</span></label>
+                            <input type="email" required class="w-full bg-white dark:bg-luxuryGray-950 border border-zinc-100 dark:border-zinc-900 rounded px-4 py-2.5 text-xs text-luxuryGray-900 dark:text-white focus:border-primary focus:outline-none" placeholder="owner@domain.com">
+                        </div>
+                        <div>
+                            <label class="block text-[9px] font-bold text-zinc-500 uppercase tracking-widest mb-1.5"><span class="lang-en">Phone Number *</span><span class="lang-ar">رقم الهاتف للتواصل *</span></label>
+                            <input type="tel" required class="w-full bg-white dark:bg-luxuryGray-950 border border-zinc-100 dark:border-zinc-900 rounded px-4 py-2.5 text-xs text-luxuryGray-900 dark:text-white focus:border-primary focus:outline-none" placeholder="+962 X XXXXXXX">
+                        </div>
+                    </div>
+
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-[9px] font-bold text-zinc-500 uppercase tracking-widest mb-1.5"><span class="lang-en">Required Space *</span><span class="lang-ar">المساحة المطلوبة (متر مربع) *</span></label>
+                            <select class="w-full bg-white dark:bg-luxuryGray-950 border border-zinc-100 dark:border-zinc-900 rounded px-4 py-2.5 text-xs text-luxuryGray-900 dark:text-white focus:border-primary focus:outline-none">
+                                <option value="kiosk">Kiosk (2-10 sqm)</option>
+                                <option value="small">Small Shop (15-50 sqm)</option>
+                                <option value="medium">Medium Shop (50-150 sqm)</option>
+                                <option value="large">Large Anchor (150+ sqm)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-[9px] font-bold text-zinc-500 uppercase tracking-widest mb-1.5"><span class="lang-en">Preferred Floor</span><span class="lang-ar">الطابق المفضل</span></label>
+                            <select class="w-full bg-white dark:bg-luxuryGray-950 border border-zinc-100 dark:border-zinc-900 rounded px-4 py-2.5 text-xs text-luxuryGray-900 dark:text-white focus:border-primary focus:outline-none">
+                                <option value="any">No Preference / Ground</option>
+                                <option value="first">First Floor</option>
+                                <option value="second">Second Floor</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-[9px] font-bold text-zinc-500 uppercase tracking-widest mb-1.5"><span class="lang-en">Activity Description *</span><span class="lang-ar">نبذة عن النشاط التجاري والمستندات *</span></label>
+                        <textarea required rows="3" class="w-full bg-white dark:bg-luxuryGray-950 border border-zinc-100 dark:border-zinc-900 rounded px-4 py-2.5 text-xs text-luxuryGray-900 dark:text-white focus:border-primary focus:outline-none" placeholder="Provide background about your brand, goods, and existing branches..."></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="w-full bg-primary hover:bg-primary-dark text-luxuryGray-950 font-medium text-xs uppercase tracking-widest py-3 rounded transition-all duration-300 shadow flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <span class="lang-en">Submit Application</span><span class="lang-ar">إرسال طلب التأجير الرسمي</span>
+                    </button>
+                    
+                    <div id="leasing-form-msg" class="hidden text-center text-xs p-3 rounded mt-4 border"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section: Contact Support, Interactive Forms & QR Codes -->
+<section id="contact" class="py-24 bg-zinc-50 dark:bg-luxuryGray-900 border-b border-zinc-100 dark:border-zinc-950">
+    <div class="max-w-7xl mx-auto px-6 sm:px-10">
+        
+        <!-- Header -->
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <span class="text-xs font-bold text-primary uppercase tracking-[0.25em] block mb-3"><span class="lang-en">Interactive Support</span><span class="lang-ar">قنوات التواصل والدعم الفني</span></span>
+            <h3 class="text-3xl sm:text-4xl font-light text-luxuryGray-900 dark:text-white mb-4 luxury-heading"><span class="lang-en">Get In Touch With Mall Management</span><span class="lang-ar">تواصل مع إدارة سوق مجدي التجاري</span></h3>
+            <div class="w-12 h-[1px] bg-primary mx-auto mb-6"></div>
+            <p class="text-zinc-500 text-xs sm:text-sm tracking-wider font-light"><span class="lang-en">For customer inquiries, tenant support, complaints, feedback, or joint marketing initiatives.</span><span class="lang-ar">نسعد دوماً باستقبال ملاحظاتكم أو استفساراتكم المتعلقة بالخدمات أو الدعم أو طلبات الترويج المشترك.</span></p>
+        </div>
+
+        <div class="grid lg:grid-cols-12 gap-12">
+            <!-- Left Info Panel with click actions and visual QR Codes -->
+            <div class="lg:col-span-5 space-y-6">
+                
+                <!-- Phone Cards -->
+                <div class="p-6 rounded bg-white dark:bg-luxuryGray-950 border border-zinc-100 dark:border-zinc-900 flex items-start gap-5 shadow-sm">
+                    <div class="w-12 h-12 rounded bg-primary/10 text-primary flex items-center justify-center text-lg shrink-0 border border-primary/10"><i class="fa-solid fa-phone-volume"></i></div>
+                    <div>
+                        <h4 class="font-semibold text-xs uppercase tracking-widest text-luxuryGray-900 dark:text-white mb-2"><span class="lang-en">Direct Phone Channels</span><span class="lang-ar">أرقام الاتصال والخطوط المباشرة</span></h4>
+                        <p class="text-xs text-zinc-500 mb-4 leading-relaxed"><span class="lang-en">Call our customer service coordinators directly.</span><span class="lang-ar">يرجى الاتصال بالاستعلامات أو إدارة المول للمساعدة السريعة.</span></p>
+                        <div class="flex flex-wrap gap-2 text-xs">
+                            <a href="tel:065338570" class="px-3 py-2 rounded bg-zinc-50 dark:bg-luxuryGray-900 hover:bg-primary hover:text-luxuryGray-950 border border-zinc-100 dark:border-zinc-900 text-zinc-700 dark:text-zinc-300 font-bold tracking-widest transition duration-300">
+                                (06) 533 8570
+                            </a>
+                            <a href="https://wa.me/96265338570" target="_blank" class="px-3 py-2 rounded bg-emerald-500/10 hover:bg-emerald-500 hover:text-white border border-emerald-500/20 text-emerald-500 font-bold tracking-widest transition duration-300">
+                                WhatsApp Chat
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Email Cards -->
+                <div class="p-6 rounded bg-white dark:bg-luxuryGray-950 border border-zinc-100 dark:border-zinc-900 flex items-start gap-5 shadow-sm">
+                    <div class="w-12 h-12 rounded bg-primary/10 text-primary flex items-center justify-center text-lg shrink-0 border border-primary/10"><i class="fa-solid fa-envelope-open-text"></i></div>
+                    <div class="w-full">
+                        <h4 class="font-semibold text-xs uppercase tracking-widest text-luxuryGray-900 dark:text-white mb-2"><span class="lang-en">Dedicated Email Channels</span><span class="lang-ar">قنوات البريد الإلكتروني المباشرة</span></h4>
+                        <p class="text-xs text-zinc-500 mb-4 leading-relaxed"><span class="lang-en">Send messages directly to correct corporate departments.</span><span class="lang-ar">أرسل ملفات شركتك أو استفسارك للقسم المعني مباشرة.</span></p>
+                        <div class="grid gap-2 text-xs">
+                            <a href="mailto:info@majdimall.com" class="text-primary hover:underline flex items-center gap-2"><i class="fa-solid fa-envelope"></i> info@majdimall.com</a>
+                            <a href="mailto:support@majdimall.com" class="text-primary hover:underline flex items-center gap-2"><i class="fa-solid fa-screwdriver-wrench"></i> support@majdimall.com</a>
+                            <a href="mailto:leasing@majdimall.com" class="text-primary hover:underline flex items-center gap-2"><i class="fa-solid fa-key"></i> leasing@majdimall.com</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Visual Mockup QR Codes -->
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="p-4 bg-white dark:bg-luxuryGray-950 border border-zinc-100 dark:border-zinc-900 rounded text-center flex flex-col items-center shadow-sm">
+                        <p class="text-[9px] font-bold text-primary uppercase tracking-widest mb-3"><span class="lang-en">WhatsApp QR Code</span><span class="lang-ar">كود الواتساب للدردشة</span></p>
+                        <svg class="w-16 h-16 text-zinc-700 dark:text-zinc-300" viewBox="0 0 100 100" fill="currentColor">
+                            <rect x="10" y="10" width="20" height="20" />
+                            <rect x="70" y="10" width="20" height="20" />
+                            <rect x="10" y="70" width="20" height="20" />
+                            <rect x="15" y="15" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <rect x="75" y="15" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <rect x="15" y="75" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <path d="M40 10h10v10H40zm0 20h10v10H40zm20-20h10v10H60zm0 20h10v10H60zM40 50h10v10H40zm20 0h10v10H60zm0 20h10v10H60zm20 0h10v10H80zm0-20h10v10H80zm0-20h10v10H80z" />
+                        </svg>
+                        <span class="text-[8px] text-zinc-400 mt-3 uppercase tracking-widest"><span class="lang-en">Scan to chat</span><span class="lang-ar">امسح للدردشة</span></span>
+                    </div>
+
+                    <div class="p-4 bg-white dark:bg-luxuryGray-950 border border-zinc-100 dark:border-zinc-900 rounded text-center flex flex-col items-center shadow-sm">
+                        <p class="text-[9px] font-bold text-primary uppercase tracking-widest mb-3"><span class="lang-en">Google Maps Location QR</span><span class="lang-ar">موقع الخريطة الجغرافية</span></p>
+                        <svg class="w-16 h-16 text-zinc-700 dark:text-zinc-300" viewBox="0 0 100 100" fill="currentColor">
+                            <rect x="10" y="10" width="20" height="20" />
+                            <rect x="70" y="10" width="20" height="20" />
+                            <rect x="10" y="70" width="20" height="20" />
+                            <rect x="15" y="15" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <rect x="75" y="15" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <rect x="15" y="75" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <path d="M40 10h10v10H40zm0 20h10v10H40zm20-20h10v10H60zm0 20h10v10H60zM40 50h10v10H40zm20 0h10v10H60zm0 20h10v10H60zm20 0h10v10H80zm0-20h10v10H80zm0-20h10v10H80z" />
+                        </svg>
+                        <span class="text-[8px] text-zinc-400 mt-3 uppercase tracking-widest"><span class="lang-en">Scan to navigate</span><span class="lang-ar">امسح لفتح الخريطة</span></span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right Column Form Panel -->
+            <div class="lg:col-span-7 bg-white dark:bg-luxuryGray-950 border border-zinc-100 dark:border-zinc-900 p-8 sm:p-10 rounded shadow-sm">
+                <form id="mall-contact-form" class="space-y-5" onsubmit="handleContactSubmission(event)">
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-[9px] font-bold text-zinc-500 uppercase tracking-widest mb-1.5"><span class="lang-en">Full Name *</span><span class="lang-ar">الاسم بالكامل *</span></label>
+                            <input type="text" required class="w-full bg-zinc-50 dark:bg-luxuryGray-900 border border-zinc-100 dark:border-zinc-900 rounded px-4 py-3 text-xs text-luxuryGray-900 dark:text-white focus:border-primary focus:outline-none" placeholder="Ahmad Al-Omari">
+                        </div>
+                        <div>
+                            <label class="block text-[9px] font-bold text-zinc-500 uppercase tracking-widest mb-1.5"><span class="lang-en">Phone Number *</span><span class="lang-ar">رقم الهاتف للتواصل *</span></label>
+                            <input type="tel" required class="w-full bg-zinc-50 dark:bg-luxuryGray-900 border border-zinc-100 dark:border-zinc-900 rounded px-4 py-3 text-xs text-luxuryGray-900 dark:text-white focus:border-primary focus:outline-none" placeholder="+962 X XXXXXXX">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-[9px] font-bold text-zinc-500 uppercase tracking-widest mb-1.5"><span class="lang-en">Email Address *</span><span class="lang-ar">البريد الإلكتروني *</span></label>
+                        <input type="email" required class="w-full bg-zinc-50 dark:bg-luxuryGray-900 border border-zinc-100 dark:border-zinc-900 rounded px-4 py-3 text-xs text-luxuryGray-900 dark:text-white focus:border-primary focus:outline-none" placeholder="name@domain.com">
+                    </div>
+
+                    <div>
+                        <label class="block text-[9px] font-bold text-zinc-500 uppercase tracking-widest mb-1.5"><span class="lang-en">Inquiry Type *</span><span class="lang-ar">نوع الاستفسار *</span></label>
+                        <select class="w-full bg-zinc-50 dark:bg-luxuryGray-900 border border-zinc-100 dark:border-zinc-900 rounded px-4 py-3 text-xs text-luxuryGray-900 dark:text-white focus:border-primary focus:outline-none">
+                            <option value="customer_service">Customer Support & Help Desk</option>
+                            <option value="leasing">Store Rental & Leasing space</option>
+                            <option value="promotions">Offers & Joint Promotions</option>
+                            <option value="feedback">Complaints & Suggestions</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-[9px] font-bold text-zinc-500 uppercase tracking-widest mb-1.5"><span class="lang-en">Your Message *</span><span class="lang-ar">رسالتك بالتفصيل *</span></label>
+                        <textarea required rows="4" class="w-full bg-zinc-50 dark:bg-luxuryGray-900 border border-zinc-100 dark:border-zinc-900 rounded px-4 py-3 text-xs text-luxuryGray-900 dark:text-white focus:border-primary focus:outline-none" placeholder="Provide details..."></textarea>
+                    </div>
+
+                    <!-- Action Submit Button -->
+                    <button type="submit" class="w-full bg-primary hover:bg-primary-dark text-luxuryGray-950 font-medium text-xs uppercase tracking-widest py-3.5 rounded transition-all duration-300 shadow flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <span class="lang-en">Send Message</span><span class="lang-ar">إرسال الرسالة الرسمية</span>
+                    </button>
+                    
+                    <div id="contact-form-msg" class="hidden text-center text-xs p-3 rounded mt-4 border"></div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Embedded Grayscale Luxury Map Section -->
+<div class="h-[420px] w-full relative bg-zinc-900 border-t border-zinc-150 dark:border-zinc-900 overflow-hidden">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3383.6559779165245!2d35.8647545!3d31.9972373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151ca1da6e22cb0d%3A0xc6cb5e98586ea5f4!2sMajdi%20Mall!5e0!3m2!1sen!2sjo!4v1700000000000!5m2!1sen!2sjo" 
+            class="w-full h-full border-none opacity-80 dark:opacity-60 transition duration-300" 
+            allowfullscreen="" 
+            loading="lazy"
+            title="Google Map location of Majdi Mall on Queen Rania Street"></iframe>
+</div>
+
+<!-- Floating Action Dock -->
+<div class="fixed bottom-6 right-6 z-50 flex flex-col items-center gap-3 transition-all duration-300" id="floating-dock">
+    <!-- Back to Top Button -->
+    <a href="#" id="back-to-top" class="hidden w-11 h-11 rounded-full bg-primary hover:bg-primary-dark text-luxuryGray-950 items-center justify-center shadow-lg transition-all transform hover:scale-110">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <!-- Phone Call -->
+    <a href="tel:065338570" class="w-12 h-12 rounded-full bg-luxuryGray-900 dark:bg-luxuryGray-950 border border-zinc-800 text-white flex items-center justify-center shadow-xl transition transform hover:scale-110" aria-label="Call Customer Desk">
+        <i class="fa-solid fa-phone text-sm text-primary"></i>
+    </a>
+
+    <!-- WhatsApp Chat -->
+    <a href="https://wa.me/96265338570" target="_blank" class="w-14 h-14 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white flex items-center justify-center shadow-xl transition transform hover:scale-110 animate-bounce" aria-label="WhatsApp Hotline">
+        <i class="fa-brands fa-whatsapp text-2xl"></i>
+    </a>
+</div>
+
+<!-- Professional Corporate Footer -->
+<footer class="bg-luxuryGray-950 text-zinc-400 py-20 border-t border-zinc-900 relative z-10">
+    <div class="max-w-7xl mx-auto px-6 sm:px-10 grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <!-- Identity -->
+        <div class="space-y-5">
+            <div class="flex items-center gap-3">
+                <div class="w-9 h-9 rounded-full border border-primary/40 flex items-center justify-center text-primary font-serif text-lg">M</div>
+                <h4 class="text-white font-serif font-semibold tracking-widest text-sm uppercase"><span class="lang-en">MAJDI MALL</span><span class="lang-ar">سوق مجدي التجاري</span></h4>
+            </div>
+            <p class="text-xs font-light leading-relaxed">
+                <span class="lang-en">The prominent shopping, value fashion, consumer electronics, and family-focused recreational center of Queen Rania Street, Amman. Delivering exceptional local hospitality since 2012.</span>
+                <span class="lang-ar">الصرح التجاري والترفيهي الأبرز المجهز لتلبية تطلعات كافة أفراد العائلة في قلب شارع الملكة رانيا، عمان. نقدم أصالة الخدمة والراحة المتكاملة منذ عام 2012.</span>
+            </p>
+            <!-- Minimal Social Media Row -->
+            <div class="flex items-center gap-3 pt-2">
+                <a href="https://facebook.com" target="_blank" class="w-8 h-8 rounded-full border border-zinc-800 hover:border-primary hover:text-white transition flex items-center justify-center text-xs" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://instagram.com" target="_blank" class="w-8 h-8 rounded-full border border-zinc-800 hover:border-primary hover:text-white transition flex items-center justify-center text-xs" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://tiktok.com" target="_blank" class="w-8 h-8 rounded-full border border-zinc-800 hover:border-primary hover:text-white transition flex items-center justify-center text-xs" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://youtube.com" target="_blank" class="w-8 h-8 rounded-full border border-zinc-800 hover:border-primary hover:text-white transition flex items-center justify-center text-xs" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+
+        <!-- Links Column -->
+        <div class="space-y-4">
+            <h4 class="text-white text-xs font-bold uppercase tracking-widest border-l-2 border-primary pl-3 rtl:border-l-0 rtl:border-r-2 rtl:pl-0 rtl:pr-3"><span class="lang-en">Quick Navigation</span><span class="lang-ar">روابط سريعة</span></h4>
+            <ul class="space-y-3.5 text-xs font-light">
+                <li><a href="#home" class="hover:text-primary transition duration-300"><span class="lang-en">Home</span><span class="lang-ar">الرئيسية</span></a></li>
+                <li><a href="#stores" class="hover:text-primary transition duration-300"><span class="lang-en">Store Directory</span><span class="lang-ar">دليل المحلات والماركات</span></a></li>
+                <li><a href="#dining" class="hover:text-primary transition duration-300"><span class="lang-en">Dining & Food Court</span><span class="lang-ar">المطاعم والمقهى المختص</span></a></li>
+                <li><a href="#entertainment" class="hover:text-primary transition duration-300"><span class="lang-en">Family Entertainment</span><span class="lang-ar">الترفيه العائلي والألعاب</span></a></li>
+                <li><a href="#leasing" class="hover:text-primary transition duration-300"><span class="lang-en">Retail Space Leasing</span><span class="lang-ar">فرص تأجير صالات عرض</span></a></li>
+            </ul>
+        </div>
+
+        <!-- Working Hours Column -->
+        <div class="space-y-4">
+            <h4 class="text-white text-xs font-bold uppercase tracking-widest border-l-2 border-primary pl-3 rtl:border-l-0 rtl:border-r-2 rtl:pl-0 rtl:pr-3"><span class="lang-en">Visiting Hours</span><span class="lang-ar">ساعات العمل الرسمية</span></h4>
+            <div class="space-y-3 text-xs font-light">
+                <div class="flex justify-between border-b border-zinc-900 pb-2">
+                    <span><span class="lang-en">Saturday - Thursday</span><span class="lang-ar">السبت - الخميس</span></span>
+                    <span class="text-white" dir="ltr">09:00 AM - 11:00 PM</span>
+                </div>
+                <div class="flex justify-between border-b border-zinc-900 pb-2">
+                    <span><span class="lang-en">Friday</span><span class="lang-ar">الجمعة</span></span>
+                    <span class="text-white" dir="ltr">02:00 PM - 11:00 PM</span>
+                </div>
+                <div class="flex justify-between">
+                    <span><span class="lang-en">Hypermarket Hour</span><span class="lang-ar">السوبر ماركت الرئيسي</span></span>
+                    <span class="text-white" dir="ltr">08:00 AM - 12:00 AM</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Weekly Newsletter subscription -->
+        <div class="space-y-4">
+            <h4 class="text-white text-xs font-bold uppercase tracking-widest border-l-2 border-primary pl-3 rtl:border-l-0 rtl:border-r-2 rtl:pl-0 rtl:pr-3"><span class="lang-en">Weekly Newsletter</span><span class="lang-ar">النشرة البريدية الأسبوعية</span></h4>
+            <p class="text-xs font-light leading-relaxed"><span class="lang-en">Stay up to date with community events, holiday markets, and exclusive savings cards.</span><span class="lang-ar">سجل بريدك الإلكتروني للحصول على العروض الأسبوعية وأحدث الفعاليات مجاناً.</span></p>
+            <form id="newsletter-form" class="space-y-2" onsubmit="handleNewsletter(event)">
+                <input type="email" required placeholder="Enter email address..." class="w-full bg-luxuryGray-900 border border-zinc-800 rounded px-3 py-2.5 text-xs text-white focus:border-primary focus:outline-none">
+                <button type="submit" class="w-full bg-primary hover:bg-primary-dark text-luxuryGray-950 font-bold py-2.5 rounded text-[10px] uppercase tracking-widest transition duration-300"><span class="lang-en">Subscribe</span><span class="lang-ar">اشترك الآن</span></button>
+                <div id="newsletter-form-msg" class="hidden text-center text-[10px] p-2 rounded border border-emerald-500/10 bg-emerald-500/10 text-emerald-400"></div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Copyright strip -->
+    <div class="mt-20 pt-8 border-t border-zinc-900 text-center text-[10px] text-zinc-500 px-6">
+        <p>&copy; 2026 Majdi Mall | سوق مجدي التجاري. <span class="lang-en">All rights reserved. Designed to represent professional Middle Eastern shopping complexes.</span><span class="lang-ar">كافة الحقوق محفوظة. تم التطوير لتمثيل مجمعات التسوق الحديثة في الشرق الأوسط.</span></p>
+    </div>
+</footer>
+
+<script>
+    // App States variables
+    let currentLanguage = 'en';
+    let currentTheme = 'light';
+    let activeLightboxIndex = 0;
+    let selectedCategoryFilter = 'all';
+    let selectedFloorFilter = 'all';
+
+    // Image array for Lightbox preview corresponding to visual Gallery cards
+    const galleryImageUrls = [
+        "https://images.unsplash.com/photo-1519501025264-65ba15a82390?q=80&w=1200&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1200&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=1200&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1543807535-eceef0bc6599?q=80&w=1200&auto=format&fit=crop"
+    ];
+
+    // Floor blueprint vector details data
+    const floorBlueprints = {
+        ground: {
+            titleEn: "Ground Floor Guide Layout Plan",
+            titleAr: "مخطط تفاصيل الطابق الأرضي",
+            descEn: "This floor accommodates main commercial services, direct parking drop-offs, banking kiosks, exchange offices, local Jordanian heritage shops, and the main hypermarket entrance.",
+            descAr: "يحتوي الطابق الأرضي على البوابة الرئيسية، مكاتب الصرافة، أجهزة الصراف الآلي، محلات التراث والفسيفساء، بالإضافة إلى المدخل الرئيسي للسوبرماركت الضخم والمواقف.",
+            units: [
+                { id: "GF-01", nameEn: "Majdi Anchor Supermarket", nameAr: "سوبرماركت مجدي الرئيسي" },
+                { id: "GF-02", nameEn: "Al-Omari Currency Exchange", nameAr: "العمري للصرافة" },
+                { id: "GF-03", nameEn: "Jordanian Mosaics & Crafts", nameAr: "فسيفساء التراث الأردني" },
+                { id: "GF-04", nameEn: "Main Customer Help Desk", nameAr: "مكتب الاستعلامات الرئيسي" }
+            ]
+        },
+        first: {
+            titleEn: "First Floor Directory Layout Plan",
+            titleAr: "مخطط تفاصيل الطابق الأول",
+            descEn: "This level contains main value apparel outlets, boutique family fashion corridors, shoes and bags depots, home decor shops, and standard beauty salons.",
+            descAr: "يحتوي الطابق الأول على أروقة الموضة والألبسة الفاخرة، محلات تجهيز العرائس والأحذية والمنسوجات، بالإضافة إلى مستلزمات المنزل والمطبخ وصالونات التجميل.",
+            units: [
+                { id: "FF-01", nameEn: "Al-Haram Premium Fashion", nameAr: "ملبوسات الحرم بلازا" },
+                { id: "FF-02", nameEn: "Home Sweet Home Essentials", nameAr: "هوم سويت لمستلزمات المنزل" },
+                { id: "FF-03", nameEn: "Elegance Bridal Boutique", nameAr: "بوتيك أناقة للعرائس" },
+                { id: "FF-04", nameEn: "Classic Beauty Salon", nameAr: "صالون الجمال الكلاسيكي" }
+            ]
+        },
+        second: {
+            titleEn: "Second Floor / Culinary Food Court Plan",
+            titleAr: "مخطط تفاصيل الطابق الثاني / ساحة المطاعم",
+            descEn: "This level hosts the main high-capacity family dining plaza, diverse global and local fast food court stations, coffee shops, electronics showroom, and kids adventure city play area.",
+            descAr: "يضم الطابق الثاني ساحة المطاعم العائلية الكبرى، المطعم الصيني الإسلامي الشهير، مقاهي الكريب والجيلاتو، أحدث الإلكترونيات الذكية، ومدينة ألعاب الأطفال المتكاملة.",
+            units: [
+                { id: "SF-01", nameEn: "Islamic Chinese Restaurant", nameAr: "المطعم الصيني الإسلامي" },
+                { id: "SF-02", nameEn: "Kids Castle Arena", nameAr: "قلعة ألعاب الأطفال" },
+                { id: "SF-03", nameEn: "Smart Tech Electronics", nameAr: "سمارت تك للإلكترونيات" },
+                { id: "SF-04", nameEn: "Levant Gourmet Grill", nameAr: "مشويات بلاد الشام" }
+            ]
+        },
+        parking: {
+            titleEn: "Parking & Commercial Facilities Blueprint Plan",
+            titleAr: "مخطط تفاصيل مواقف السيارات والمرافق",
+            descEn: "Offers underground protected double-level parking facilities, professional car wash services, corporate administrative offices, and secure praying wings.",
+            descAr: "يوفر مواقف سيارات سفلية مجانية بالكامل ومحمية تتسع لمئات المركبات، مع خدمات غسيل وتلميع السيارات، ومكاتب إدارة المول، والمصليات والخدمات العامة.",
+            units: [
+                { id: "P1", nameEn: "Underground Double Lot", nameAr: "المواقف السفلية المزدوجة" },
+                { id: "P2", nameEn: "Eco-Clean Car Wash", nameAr: "مغسلة السيارات الصديقة للبيئة" },
+                { id: "P3", nameEn: "Mall Management Offices", nameAr: "مكاتب الإدارة والتحكم" },
+                { id: "P4", nameEn: "Ablution & Prayer Suites", nameAr: "المصليات والخدمات الصحية" }
+            ]
+        }
+    };
+
+    window.onload = function() {
+        // Synchronize default theme configurations
+        updateThemeLayout();
+
+        // Synchronize bilingual content orientations
+        updateDocumentBilinguality();
+
+        // Launch real-time countdown tickers for promotional offers
+        launchCountdownTickers();
+
+        // Scroll listener to toggle sticky navigation bar states
+        window.onscroll = function() {
+            handleScrollEvents();
+        };
+    };
+
+    // Responsive sticky navigation adjustments and floating scroll toggles
+    function handleScrollEvents() {
+        const header = document.getElementById("main-header");
+        const backToTopBtn = document.getElementById("back-to-top");
+
+        if (window.scrollY > 80) {
+            header.classList.add("shadow-lg");
+            header.classList.remove("py-4");
+            header.classList.add("py-3");
+        } else {
+            header.classList.remove("shadow-lg");
+            header.classList.remove("py-3");
+            header.classList.add("py-4");
+        }
+
+        if (window.scrollY > 400) {
+            backToTopBtn.classList.remove("hidden");
+            backToTopBtn.classList.add("flex");
+        } else {
+            backToTopBtn.classList.add("hidden");
+            backToTopBtn.classList.remove("flex");
+        }
+    }
+
+    // Toggle app language switcher between English and Arabic
+    function toggleLanguage() {
+        currentLanguage = currentLanguage === 'en' ? 'ar' : 'en';
+        updateDocumentBilinguality();
+    }
+
+    // Apply specific directory layout attributes based on current language
+    function updateDocumentBilinguality() {
+        const htmlElement = document.documentElement;
+        htmlElement.setAttribute('lang', currentLanguage);
+        
+        if (currentLanguage === 'ar') {
+            htmlElement.setAttribute('dir', 'rtl');
+            // Align floating contact dock to left for RTL layout
+            document.getElementById("floating-dock").classList.remove("right-6");
+            document.getElementById("floating-dock").classList.add("left-6");
+        } else {
+            htmlElement.setAttribute('dir', 'ltr');
+            document.getElementById("floating-dock").classList.remove("left-6");
+            document.getElementById("floating-dock").classList.add("right-6");
+        }
+    }
+
+    // Toggle app light and dark theme mode
+    function toggleTheme() {
+        const htmlElement = document.documentElement;
+        if (htmlElement.classList.contains('dark')) {
+            htmlElement.classList.remove('dark');
+            currentTheme = 'light';
+        } else {
+            htmlElement.classList.add('dark');
+            currentTheme = 'dark';
+        }
+        updateThemeLayout();
+    }
+
+    // Handle dark background shifts
+    function updateThemeLayout() {}
+
+    // Toggle mobile navigation drawer layout
+    function toggleMobileMenu() {
+        const menu = document.getElementById("mobile-menu");
+        const icon = document.getElementById("menu-icon");
+        if (menu.classList.contains("hidden")) {
+            menu.classList.remove("hidden");
+            icon.classList.remove("fa-bars-staggered");
+            icon.classList.add("fa-xmark");
+        } else {
+            menu.classList.add("hidden");
+            icon.classList.remove("fa-xmark");
+            icon.classList.add("fa-bars-staggered");
+        }
+    }
+
+    // Toggle the quick header search overlay
+    function toggleQuickSearch() {
+        const overlay = document.getElementById("quick-search-overlay");
+        overlay.classList.toggle("hidden");
+        if (!overlay.classList.contains("hidden")) {
+            document.getElementById("quick-search-input").focus();
+        }
+    }
+
+    // Fast search and filter engine for stores directory
+    function runStoreSearch() {
+        const query = document.getElementById("store-search-box").value.toLowerCase().trim();
+        applyStoresDirectoryFilter(query);
+    }
+
+    // Universal quick search handler
+    function runStoreSearchUniversal() {
+        const query = document.getElementById("quick-search-input").value.toLowerCase().trim();
+        applyStoresDirectoryFilter(query);
+        // Scroll down to directory smoothly
+        document.getElementById("stores").scrollIntoView();
+    }
+
+    // A-Z single letter filter logic
+    function filterByLetter(letter) {
+        const buttons = document.querySelectorAll(".az-btn");
+        buttons.forEach(btn => {
+            if (btn.innerText.trim().toUpperCase() === letter.toUpperCase() || (letter === 'all' && btn.innerText.includes('All'))) {
+                btn.classList.add("bg-primary", "text-luxuryGray-950");
+                btn.classList.remove("bg-zinc-50", "dark:bg-luxuryGray-900", "text-luxuryGray-900", "dark:text-zinc-400");
+            } else {
+                btn.classList.remove("bg-primary", "text-luxuryGray-950");
+                btn.classList.add("bg-zinc-50", "dark:bg-luxuryGray-900", "text-luxuryGray-900", "dark:text-zinc-400");
+            }
+        });
+
+        const cards = document.querySelectorAll(".store-item");
+        let visibleCount = 0;
+
+        cards.forEach(card => {
+            const name = card.getAttribute("data-name").toUpperCase();
+            const matchesLetter = letter === 'all' || name.startsWith(letter);
+            const matchesCategory = selectedCategoryFilter === 'all' || card.getAttribute("data-category") === selectedCategoryFilter;
+            const matchesFloor = selectedFloorFilter === 'all' || card.getAttribute("data-floor") === selectedFloorFilter;
+
+            if (matchesLetter && matchesCategory && matchesFloor) {
+                card.style.display = 'flex';
+                visibleCount++;
+            } else {
+                card.style.display = 'none';
+            }
+        });
+
+        toggleStoreFallbackNotice(visibleCount === 0);
+    }
+
+    function filterCategory(category) {
+        selectedCategoryFilter = category;
+        const tabs = document.querySelectorAll(".cat-tab");
+        tabs.forEach(tab => {
+            const tabAttr = tab.getAttribute("onclick");
+            if (tabAttr && tabAttr.includes(`'${category}'`)) {
+                tab.classList.add("bg-primary/10", "text-primary", "border-primary");
+                tab.classList.remove("text-zinc-500", "border-zinc-100", "dark:border-zinc-900");
+            } else {
+                tab.classList.remove("bg-primary/10", "text-primary", "border-primary");
+                tab.classList.add("text-zinc-500", "border-zinc-100", "dark:border-zinc-900");
+            }
+        });
+
+        applyStoresDirectoryFilter();
+    }
+
+    function filterFloor(floor) {
+        selectedFloorFilter = floor;
+        const tabs = document.querySelectorAll(".floor-tab");
+        tabs.forEach(tab => {
+            const tabAttr = tab.getAttribute("onclick");
+            if (tabAttr && tabAttr.includes(`'${floor}'`)) {
+                tab.classList.add("bg-primary/10", "text-primary", "border-primary");
+                tab.classList.remove("text-zinc-500", "border-zinc-100", "dark:border-zinc-900");
+            } else {
+                tab.classList.remove("bg-primary/10", "text-primary", "border-primary");
+                tab.classList.add("text-zinc-500", "border-zinc-100", "dark:border-zinc-900");
+            }
+        });
+
+        applyStoresDirectoryFilter();
+    }
+
+    function applyStoresDirectoryFilter(query = "") {
+        const cards = document.querySelectorAll(".store-item");
+        let visibleCount = 0;
+
+        cards.forEach(card => {
+            const name = card.getAttribute("data-name").toLowerCase();
+            const category = card.getAttribute("data-category");
+            const floor = card.getAttribute("data-floor");
+
+            const matchesSearch = query === "" || name.includes(query);
+            const matchesCategory = selectedCategoryFilter === 'all' || category === selectedCategoryFilter;
+            const matchesFloor = selectedFloorFilter === 'all' || floor === selectedFloorFilter;
+
+            if (matchesSearch && matchesCategory && matchesFloor) {
+                card.style.display = 'flex';
+                visibleCount++;
+            } else {
+                card.style.display = 'none';
+            }
+        });
+
+        toggleStoreFallbackNotice(visibleCount === 0);
+    }
+
+    function toggleStoreFallbackNotice(show) {
+        const notice = document.getElementById("no-store-notice");
+        if (show) {
+            notice.classList.remove("hidden");
+        } else {
+            notice.classList.add("hidden");
+        }
+    }
+
+    // Floor Layout Plan Vector Switcher
+    function switchFloorLayout(floorKey) {
+        const buttons = document.querySelectorAll(".floor-layout-btn");
+        buttons.forEach(btn => {
+            if (btn.id === `floor-btn-${floorKey}`) {
+                btn.classList.add("border-primary", "bg-primary/5", "text-primary");
+                btn.classList.remove("border-zinc-100", "dark:border-zinc-900", "bg-zinc-50", "dark:bg-luxuryGray-900", "text-luxuryGray-900", "dark:text-zinc-200");
+            } else {
+                btn.classList.remove("border-primary", "bg-primary/5", "text-primary");
+                btn.classList.add("border-zinc-100", "dark:border-zinc-900", "bg-zinc-50", "dark:bg-luxuryGray-900", "text-luxuryGray-900", "dark:text-zinc-200");
+            }
+        });
+
+        const details = floorBlueprints[floorKey];
+        const container = document.getElementById("floor-map-content");
+
+        let unitCardsHTML = "";
+        details.units.forEach(unit => {
+            unitCardsHTML += `
+                <div class="p-4 bg-white dark:bg-luxuryGray-950 border border-zinc-100 dark:border-zinc-900 rounded text-center font-bold text-xs shadow-sm text-luxuryGray-900 dark:text-zinc-300 hover:border-primary/40 transition duration-300">
+                    <p class="text-primary text-[10px] uppercase tracking-widest font-semibold">${unit.id}</p>
+                    <p class="mt-1 font-medium text-xs"><span class="lang-en">${unit.nameEn}</span><span class="lang-ar">${unit.nameAr}</span></p>
+                </div>
+            `;
+        });
+
+        container.innerHTML = `
+            <div class="flex items-center justify-between border-b border-zinc-200 dark:border-zinc-800 pb-4">
+                <h4 class="font-semibold text-lg text-primary flex items-center gap-2">
+                    <i class="fa-solid fa-layer-group"></i>
+                    <span class="lang-en">${details.titleEn}</span><span class="lang-ar">${details.titleAr}</span>
+                </h4>
+                <span class="text-[10px] tracking-widest bg-emerald-500/10 text-emerald-500 font-bold px-3 py-1 rounded uppercase"><span class="lang-en">Fully Accessible</span><span class="lang-ar">مجهز بالكامل للكراسي</span></span>
+            </div>
+            <p class="text-sm text-zinc-500 font-light leading-relaxed"><span class="lang-en">${details.descEn}</span><span class="lang-ar">${details.descAr}</span></p>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-4">
+                ${unitCardsHTML}
+            </div>
+        `;
+    }
+
+    // Active JavaScript Countdown timers for promotional cards
+    function launchCountdownTickers() {
+        let durationOffer1 = 84; 
+        let durationOffer2 = 4;  
+        let durationOffer3 = 128; 
+
+        setInterval(() => {
+            if (durationOffer1 > 0) {
+                durationOffer1 -= 0.01;
+                document.getElementById("timer-offer-1").innerText = formatTimeDuration(durationOffer1);
+            }
+            if (durationOffer2 > 0) {
+                durationOffer2 -= 0.01;
+                document.getElementById("timer-offer-2").innerText = formatTimeDuration(durationOffer2);
+            }
+            if (durationOffer3 > 0) {
+                durationOffer3 -= 0.01;
+                document.getElementById("timer-offer-3").innerText = formatTimeDuration(durationOffer3);
+            }
+        }, 36000); 
+    }
+
+    function formatTimeDuration(hoursTotal) {
+        const days = Math.floor(hoursTotal / 24);
+        const hours = Math.floor(hoursTotal % 24);
+        const minutes = Math.floor((hoursTotal * 60) % 60);
+
+        if (days > 0) {
+            return currentLanguage === 'en' ? `${days}d, ${hours}h left` : `ينتهي في: ${days} يوم، ${hours} ساعة`;
+        } else {
+            return currentLanguage === 'en' ? `${hours}h, ${minutes}m left` : `ينتهي في: ${hours} ساعة، ${minutes} دقيقة`;
+        }
+    }
+
+    // Gallery Category filtering
+    function filterGallery(category) {
+        const tabs = document.querySelectorAll(".gallery-tab-btn");
+        tabs.forEach(tab => {
+            const tabAttr = tab.getAttribute("onclick");
+            if (tabAttr && tabAttr.includes(`'${category}'`)) {
+                tab.classList.add("bg-primary/10", "text-primary", "border-primary");
+                tab.classList.remove("text-zinc-500", "border-zinc-100", "dark:border-zinc-900");
+            } else {
+                tab.classList.remove("bg-primary/10", "text-primary", "border-primary");
+                tab.classList.add("text-zinc-500", "border-zinc-100", "dark:border-zinc-900");
+            }
+        });
+
+        const cards = document.querySelectorAll(".gallery-card");
+        cards.forEach(card => {
+            const cat = card.getAttribute("data-cat");
+            if (category === 'all' || cat === category) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
+
+    // Lightbox gallery modal trigger functions
+    function openLightbox(index) {
+        activeLightboxIndex = index;
+        const lightbox = document.getElementById("lightbox");
+        const img = document.getElementById("lightbox-img");
+        
+        img.src = galleryImageUrls[activeLightboxIndex];
+        lightbox.classList.remove("hidden");
+        lightbox.classList.add("flex");
+    }
+
+    function closeLightbox() {
+        const lightbox = document.getElementById("lightbox");
+        lightbox.classList.add("hidden");
+        lightbox.classList.remove("flex");
+    }
+
+    // Handle keypress inside Lightbox modal
+    function prevImage() {
+        activeLightboxIndex = (activeLightboxIndex - 1 + galleryImageUrls.length) % galleryImageUrls.length;
+        document.getElementById("lightbox-img").src = galleryImageUrls[activeLightboxIndex];
+    }
+
+    // Handle keypress inside Lightbox modal
+    function nextImage() {
+        activeLightboxIndex = (activeLightboxIndex + 1) % galleryImageUrls.length;
+        document.getElementById("lightbox-img").src = galleryImageUrls[activeLightboxIndex];
+    }
+
+    // Handle customer contact submissions
+    function handleContactSubmission(event) {
+        event.preventDefault();
+        const msgBox = document.getElementById("contact-form-msg");
+        msgBox.classList.remove("hidden");
+        msgBox.classList.add("block");
+
+        if (currentLanguage === 'en') {
+            msgBox.className = "text-center text-xs p-3 rounded border bg-emerald-500/10 border-emerald-500/20 text-emerald-500 mt-4 font-semibold tracking-wider uppercase";
+            msgBox.innerText = "Inquiry sent successfully to the Desk. We will respond within 24 hours.";
+        } else {
+            msgBox.className = "text-center text-xs p-3 rounded border bg-emerald-500/10 border-emerald-500/20 text-emerald-500 mt-4 font-semibold";
+            msgBox.innerText = "شكراً لك! تم إرسال رسالتك بنجاح إلى إدارة سوق مجدي. سنقوم بالرد عليك خلال 24 ساعة كحد أقصى.";
+        }
+
+        document.getElementById("mall-contact-form").reset();
+        setTimeout(() => { msgBox.classList.add("hidden"); }, 8000);
+    }
+
+    // Handle corporate leasing applications
+    function handleLeasingForm(event) {
+        event.preventDefault();
+        const msgBox = document.getElementById("leasing-form-msg");
+        msgBox.classList.remove("hidden");
+        msgBox.classList.add("block");
+
+        if (currentLanguage === 'en') {
+            msgBox.className = "text-center text-xs p-3 rounded border bg-emerald-500/10 border-emerald-500/20 text-emerald-500 mt-4 font-semibold tracking-wider uppercase";
+            msgBox.innerText = "Leasing Application sent. The leasing department will contact you within 2 business days.";
+        } else {
+            msgBox.className = "text-center text-xs p-3 rounded border bg-emerald-500/10 border-emerald-500/20 text-emerald-500 mt-4 font-semibold";
+            msgBox.innerText = "تم إرسال طلب استئجار المساحة التجارية بنجاح. سيقوم مسؤول قسم التأجير بالتواصل معكم خلال يومي عمل.";
+        }
+
+        document.getElementById("leasing-apply-form").reset();
+        setTimeout(() => { msgBox.classList.add("hidden"); }, 8000);
+    }
+
+    // Handle newsletter subscriptions
+    function handleNewsletter(event) {
+        event.preventDefault();
+        const msgBox = document.getElementById("newsletter-form-msg");
+        msgBox.classList.remove("hidden");
+        msgBox.classList.add("block");
+
+        if (currentLanguage === 'en') {
+            msgBox.innerText = "Subscribed successfully! Weekly luxury updates will arrive soon.";
+        } else {
+            msgBox.innerText = "تم الاشتراك بنجاح! ستصلك العروض الأسبوعية الحصرية.";
+        }
+
+        document.getElementById("newsletter-form").reset();
+        setTimeout(() => { msgBox.classList.add("hidden"); }, 5000);
+    }
+</script>
+
+</body>
+</html>
